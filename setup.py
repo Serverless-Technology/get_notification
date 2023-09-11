@@ -10,5 +10,7 @@ setup(
         "tweepy",
         "pandas",
         "python-dotenv",
+        "bot-studio",
+        "google-search-results",
         ],
 )

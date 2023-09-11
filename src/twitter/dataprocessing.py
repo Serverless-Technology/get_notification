@@ -4,10 +4,10 @@ import json
 from config import *
 
 # Twitter API credentials
-consumer_key = CONSUMER_KEY
-consumer_secret = CONSUMER_SECRET
-access_token = ACCESS_TOKEN
-access_token_secret = ACCESS_TOKEN_SECRET
+consumer_key = TWITTER_CONSUMER_KEY
+consumer_secret = TWITTER_CONSUMER_SECRET
+access_token = TWITTER_ACCESS_TOKEN
+access_token_secret = TWITTER_ACCESS_TOKEN_SECRET
 
 # Initialize the Twitter API client
 auth = tweepy.OAuth1UserHandler(

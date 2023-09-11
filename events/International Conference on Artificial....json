@@ -1,0 +1,32 @@
+{
+    "title": "International Conference on Artificial...",
+    "date": {
+        "start_date": "Sep 15",
+        "when": "Fri, Sep 15 – Sat, Sep 16"
+    },
+    "address": [
+        "Poornima College of Engineering, ISI-6, RIICO Institutional Area, Sitapura",
+        "Jaipur, Rajasthan, India"
+    ],
+    "link": "https://10times.com/icaiaa",
+    "event_location_map": {
+        "image": "https://www.google.com/maps/vt/data=gLK5Wp8bVtdb5hD2qpH5mGCNUxnwdXWLAsVGzTeLPn9rFR9FgiUMzKB0IaTNOcCDTHHkrLGLFCpdtExhf2rnd9dvZ6XysHLCC2z8xTc-kHtXOR3ohsw",
+        "link": "https://www.google.com/maps/place//data=!4m2!3m1!1s0x396c1c7f8fffffff:0x7ee5a5f5b127bb8d?sa=X&ved=2ahUKEwikoOD21qGBAxVWRjABHe8rBRUQ9eIBegQINhAA",
+        "serpapi_link": "https://serpapi.com/search.json?data=%214m2%213m1%211s0x396c1c7f8fffffff%3A0x7ee5a5f5b127bb8d&engine=google_maps&google_domain=google.com&hl=en&q=Research+Conferences+in+India&type=place"
+    },
+    "description": "The International Conference on Artificial Intelligence: Advances and Applications seeks to unite researchers from around the world to share their AI research. It will also cover topics such as...",
+    "ticket_info": [
+        {
+            "source": "10Times",
+            "link": "https://10times.com/icaiaa",
+            "link_type": "more info"
+        }
+    ],
+    "venue": {
+        "name": "Poornima College of Engineering",
+        "reviews": 854,
+        "link": "https://www.google.com/search?sca_esv=564248790&q=Poornima+College+of+Engineering&ludocid=9143897093103401869&ibp=gwp%3B0,7"
+    },
+    "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBLjw-9VLadMg1GuQmB6q-rPPlCz0zvCo7LblGkPCB8pLyrH0I6FgDGOk&s",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZz93TM87GurgqqO6TAHixFAvOU--nyqlR5cJDnlkDY1D8u0YOGEMQ2GEhED0&s=10"
+}
