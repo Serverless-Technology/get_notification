@@ -6,5 +6,9 @@ setup(
     name="get-notifications",
     version=__version__,
     packages=find_packages(),
-    install_requires=[],
+    install_requires=[
+        "tweepy",
+        "pandas",
+        "python-dotenv",
+        ],
 )
