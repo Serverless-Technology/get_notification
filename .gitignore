@@ -145,3 +145,5 @@ __pycache__/
     .mr.developer.pyo
     .mr.developer.cfg
     .
+
+.env
