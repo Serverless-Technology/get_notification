@@ -6,6 +6,8 @@ from serpapi import GoogleSearch
 from src.storage.upload_model import get_storage_instance, upload_event
 from config import SRC_PATH, DEST_PATH
 
+from datetime import datetime
+
 
 params = {
   "engine": "google_events",
@@ -35,8 +37,9 @@ def upload_to_bucket(count, event):
     file_name=f"./src/google-search/events/{count}"
     with open(f'{file_name}.json', 'w', encoding='utf-8') as json_file:
         json.dump(event, json_file, ensure_ascii=False, indent=4)
-    dst_path=f"{DEST_PATH}{count}.json"
-    print(f"\n Before upload start {dst_path} \n")
+    day=datetime.now().strftime("%Y_%m_%d")
+    time=datetime.now().strftime("%Y_%m_%d_T%H%M")
+    dst_path=f"{DEST_PATH}{day}/{time}/{count}.json"
     src_path=f"{SRC_PATH}/{count}.json"
     upload_event(storage, src_path, dst_path, max_attempts=3)
 

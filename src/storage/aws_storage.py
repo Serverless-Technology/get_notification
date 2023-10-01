@@ -37,8 +37,7 @@ class AmazonWebStorage(Storage):
 
     def upload(self, src_path, dst_path):
         s3_dst_path = copy(dst_path).replace(f"s3://{self.bucket.name}/", "")
-        validation_path=s3_dst_path.split("/")[0]+"/"
-        cog_exists = self.validate(validation_path)
+        cog_exists = self.validate(s3_dst_path)
         if cog_exists:
             print(f"File already present in path: {dst_path}")
             exit(1)
@@ -56,7 +55,6 @@ class AmazonWebStorage(Storage):
         try:
             self.resource.Object(self.bucket.name, path).load()
         except ClientError as e:
-            print(e)
             return False
         else:
             return True
