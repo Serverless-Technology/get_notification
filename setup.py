@@ -12,5 +12,9 @@ setup(
         "python-dotenv",
         "bot-studio",
         "google-search-results",
+        "boto3",
+        "python-dotenv",
         ],
 )
+
+# s3://get-notifications/google-events/2021-06-18T00:00:00.000Z.json

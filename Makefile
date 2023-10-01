@@ -1,5 +1,5 @@
 build:
-	pip install -e .
+	pip3 install -e .
 
 google-events:
-	python src/google-search/data_fetch.py
+	python3 src/google-search/data_fetch.py
