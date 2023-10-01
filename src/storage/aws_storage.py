@@ -3,8 +3,7 @@ from botocore.exceptions import ClientError
 from copy import copy
 
 from .base import Storage
-
-from config import AWS_ACCESSS_KEY, AWS_ACCESS_SECRET
+from config_ import AWS_ACCESSS_KEY, AWS_ACCESS_SECRET
 
 
 class AmazonWebStorage(Storage):

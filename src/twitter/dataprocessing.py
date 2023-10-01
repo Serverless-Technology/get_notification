@@ -1,7 +1,7 @@
 import tweepy
 import json
 
-from config import *
+from config_ import *
 
 # Twitter API credentials
 consumer_key = TWITTER_CONSUMER_KEY

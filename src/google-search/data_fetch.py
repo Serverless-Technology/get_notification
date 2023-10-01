@@ -2,16 +2,16 @@ import os
 import json
 import shutil
 from serpapi import GoogleSearch
-
+import sys
 from src.storage.upload_model import get_storage_instance, upload_event
-from config import SRC_PATH, DEST_PATH
+from config_ import SRC_PATH, DEST_PATH
 
 from datetime import datetime
 
 
 params = {
   "engine": "google_events",
-  "q": "Cricket World Cup",
+  "q": "International Conferences",
   "hl": "en",
   "gl": "us",
   "api_key": "f5bca446203ba13b76ece776baef70e7da283e15fa26f3e612c12303c658b58c"

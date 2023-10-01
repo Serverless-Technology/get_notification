@@ -1,46 +1,32 @@
 {
-    "title": "World Cup 2023 Schedule",
+    "title": "International Conference on Evolving Trends in...",
     "date": {
-        "start_date": "Oct 4",
-        "when": "Wed, Oct 4, 8:00 PM – Thu, Oct 5, 7:30 PM GMT+5:30"
+        "start_date": "Oct 1",
+        "when": "Sun, Oct 1 – Tue, Oct 3"
     },
     "address": [
-        "Narendra Modi Stadium, Stadium Rd, Parvati Nagar, Motera",
-        "Ahmedabad, Gujarat, India"
+        "Hotel Riu Plaza New York Times Square, 305 W 46th St",
+        "New York, NY"
     ],
-    "link": "https://in.bookmyshow.com/sports/england-vs-new-zealand-icc-mens-cwc-2023/ET00367548",
-    "description": "The opening match of the ICC Men’s Cricket World Cup 2023 is a re-run of the 2019 Final, set to take place in the largest cricket stadium in the world in Ahmedabad on Thursday 5 October. Holders...",
+    "link": "https://10times.com/international-conference-on-evolving-trends-in",
+    "event_location_map": {
+        "image": "https://www.google.com/maps/vt/data=xjltDX3nN5TTyzWrB_DCCHOv_ix4l27QhEDEhDaAky29vK6_a1dFwy36ZflyRv-dyr8ntY1HOGitk1x1zoy7Kni-NfuP2sSTtIYQXBu3uUIY5B70rJE",
+        "link": "https://www.google.com/maps/place//data=!4m2!3m1!1s0x89c2585405ec0c0f:0x522768d97ed821bd?sa=X&ved=2ahUKEwiV1JrQz9SBAxUOmokEHWz7CTEQ9eIBegQICRAA&hl=en&gl=us",
+        "serpapi_link": "https://serpapi.com/search.json?data=%214m2%213m1%211s0x89c2585405ec0c0f%3A0x522768d97ed821bd&engine=google_maps&google_domain=google.com&hl=en&q=International+Conferences&type=place"
+    },
+    "description": "The International New York Conference on Evolving Trends in Interdisciplinary Research & Practices will take place in Manhattan, offering both online and in-person participation. The conference...",
     "ticket_info": [
         {
-            "source": "International Cricket Council",
-            "link": "https://www.cricketworldcup.com/match/102744",
-            "link_type": "more info"
-        },
-        {
-            "source": "ICC Cricket",
-            "link": "https://www.icc-cricket.com/match/102744#!",
-            "link_type": "more info"
-        },
-        {
-            "source": "BookMyShow",
-            "link": "https://in.bookmyshow.com/sports/england-vs-new-zealand-icc-mens-cwc-2023/ET00367548",
-            "link_type": "more info"
-        },
-        {
-            "source": "NDTV Sports",
-            "link": "https://sports.ndtv.com/cricket/eng-vs-nz-scorecard-live-cricket-score-icc-cricket-world-cup-2023-match-1-ennz10052023228777",
-            "link_type": "more info"
-        },
-        {
-            "source": "Hindustan Times",
-            "link": "https://www.hindustantimes.com/cricket/world-cup/schedule",
+            "source": "10Times",
+            "link": "https://10times.com/international-conference-on-evolving-trends-in",
             "link_type": "more info"
         }
     ],
     "venue": {
-        "name": "Narendra Modi Stadium",
-        "reviews": 18764,
-        "link": "https://www.google.com/search?sca_esv=569801783&q=Narendra+Modi+Stadium&ludocid=12364473804001350445&ibp=gwp%3B0,7"
+        "name": "Hotel Riu Plaza New York Times Square",
+        "reviews": 7570,
+        "link": "https://www.google.com/search?sca_esv=569833926&hl=en&gl=us&q=Hotel+Riu+Plaza+New+York+Times+Square&ludocid=5919815518547091901&ibp=gwp%3B0,7"
     },
-    "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLesc0nf13-3HfmczXzd8s8eiydZGOTDSlJunIljg&s"
+    "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9ioD9U74qTZQ2EERqr8Pw7HICWLOyNHvUlZZ37cVhCHsKyk6y56g8K7E&s",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxju3g1wCKdLDjwO9IyegTEtWoyqt1lulDZqHJhy4nhX0KeRC4Hj8QlqgrEVQ&s=10"
 }
