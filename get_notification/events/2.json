@@ -1,0 +1,32 @@
+{
+    "title": "International Conference on Evolving Trends in...",
+    "date": {
+        "start_date": "Oct 1",
+        "when": "Sun, Oct 1 – Tue, Oct 3"
+    },
+    "address": [
+        "Hotel Riu Plaza New York Times Square, 305 W 46th St",
+        "New York, NY"
+    ],
+    "link": "https://10times.com/international-conference-on-evolving-trends-in",
+    "event_location_map": {
+        "image": "https://www.google.com/maps/vt/data=xjltDX3nN5TTyzWrB_DCCHOv_ix4l27QhEDEhDaAky29vK6_a1dFwy36ZflyRv-dyr8ntY1HOGitk1x1zoy7Kni-NfuP2sSTtIYQXBu3uUIY5B70rJE",
+        "link": "https://www.google.com/maps/place//data=!4m2!3m1!1s0x89c2585405ec0c0f:0x522768d97ed821bd?sa=X&ved=2ahUKEwiV1JrQz9SBAxUOmokEHWz7CTEQ9eIBegQICRAA&hl=en&gl=us",
+        "serpapi_link": "https://serpapi.com/search.json?data=%214m2%213m1%211s0x89c2585405ec0c0f%3A0x522768d97ed821bd&engine=google_maps&google_domain=google.com&hl=en&q=International+Conferences&type=place"
+    },
+    "description": "The International New York Conference on Evolving Trends in Interdisciplinary Research & Practices will take place in Manhattan, offering both online and in-person participation. The conference...",
+    "ticket_info": [
+        {
+            "source": "10Times",
+            "link": "https://10times.com/international-conference-on-evolving-trends-in",
+            "link_type": "more info"
+        }
+    ],
+    "venue": {
+        "name": "Hotel Riu Plaza New York Times Square",
+        "reviews": 7570,
+        "link": "https://www.google.com/search?sca_esv=569833926&hl=en&gl=us&q=Hotel+Riu+Plaza+New+York+Times+Square&ludocid=5919815518547091901&ibp=gwp%3B0,7"
+    },
+    "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9ioD9U74qTZQ2EERqr8Pw7HICWLOyNHvUlZZ37cVhCHsKyk6y56g8K7E&s",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxju3g1wCKdLDjwO9IyegTEtWoyqt1lulDZqHJhy4nhX0KeRC4Hj8QlqgrEVQ&s=10"
+}

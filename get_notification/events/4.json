@@ -1,0 +1,26 @@
+{
+    "title": "International conference on Applied Science...",
+    "date": {
+        "start_date": "Oct 1",
+        "when": "Sun, Oct 1 – Mon, Oct 2"
+    },
+    "address": [
+        "New York",
+        "New York, NY"
+    ],
+    "link": "https://www.conferencealerts.net/event_detail.php?ev_id=829420",
+    "event_location_map": {
+        "image": "https://www.google.com/maps/vt/data=krrytAr-OsUgbES9AeLrxyX1Rw48JHfAR6OCCAXWnF8GxMEbTISqHOzFMpqB2YCD-4pEht2nIQ",
+        "link": "https://www.google.com/maps/place//data=!4m2!3m1!1s0x89c24fa5d33f083b:0xc80b8f06e177fe62?sa=X&ved=2ahUKEwiV1JrQz9SBAxUOmokEHWz7CTEQ9eIBegQIFxAA&hl=en&gl=us",
+        "serpapi_link": "https://serpapi.com/search.json?data=%214m2%213m1%211s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62&engine=google_maps&google_domain=google.com&hl=en&q=International+Conferences&type=place"
+    },
+    "description": "Conference Alerts Network is an online platform where you can get the details on upcoming national & international conferences on various subjects for 2021-2022. Organisers can list their academic...",
+    "ticket_info": [
+        {
+            "source": "Conference Alerts Network",
+            "link": "https://www.conferencealerts.net/event_detail.php?ev_id=829420",
+            "link_type": "more info"
+        }
+    ],
+    "thumbnail": "https://www.google.com/maps/vt/data=krrytAr-OsUgbES9AeLrxyX1Rw48JHfAR6OCCAXWnF8GxMEbTISqHOzFMpqB2YCD-4pEht2nIQ"
+}
