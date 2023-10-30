@@ -148,3 +148,5 @@ __pycache__/
 
 .env
 experiment.ipynb
+test.txt
+get_notification/node_modules
