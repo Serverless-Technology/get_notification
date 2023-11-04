@@ -1,7 +1,4 @@
-import razorpay
-import imghdr
 import requests
-from mysql.connector.conversion import MySQLConverter
 from flask import (
     Flask,
     render_template,
@@ -10,8 +7,6 @@ from flask import (
     redirect,
     session,
     flash,
-    jsonify,
-    make_response,
 )
 import json
 from src.helper import current_date, generate_uuid
