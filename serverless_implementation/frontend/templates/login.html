@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Sell Portal Login</title>
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/login.css') }}">
+    <!-- Remix Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="card">
+        <div class="side_img">
+            <img src="/static/image/campus.jpeg" alt="img" class="img">
+        </div>
+        <div class="side_img">
+            <form method="POST" action="#" class="take_input active" id="login">
+                
+                <h2>Login</h2>
+                <label for="email">Email Address</label>
+                <div class="email_add" onclick="activeInput(this)">
+                    <input type="email" name="email" class="email" id="emailInput" placeholder="abc@iitgn.ac.in">
+                </div>
+                
+                <button type="submit" class="btn btn-login"><a href="index.html"></a>Login</a></button>
+                <p>Don't have an account? <a href="/register" id="changeToRegister">Sign up</a></p>
+                <p class="or"></p>
+                {% with messages = get_flashed_messages() %}
+                {% if messages %}
+                <div class="alert alert-danger" role="alert">
+                    {% for message in messages %}
+                        <span style="color: red;">{{ message }}</span><br>
+                    {% endfor %}
+                </div>
+                {% endif %}
+            {% endwith %}
+                
+            </form>
+            
+        </div>
+    </div>
+    
+
+</body>
+
+</html>

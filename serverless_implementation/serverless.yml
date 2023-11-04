@@ -152,6 +152,10 @@ functions:
 #       Value: "Some output value"
 resources:
   Resources:
+    # DataFetchBucket:
+    #   Type: AWS::S3::Bucket
+    #   Properties:
+    #     BucketName: data-fetch-bucket
     UsersTable:
       Type: AWS::DynamoDB::Table
       Properties:
@@ -166,8 +170,12 @@ resources:
           ReadCapacityUnits: 1
           WriteCapacityUnits: 1
 
-# plugins:
-#   - serverless-dynamodb-client
-#   - serverless-offline
+plugins:
+  - serverless-python-requirements
+  # - serverless-s3-sync
 
+# custom:
+#   s3Sync:
+#     - bucketName: data-fetch-bucket
+#       localDir: ./src/google_events/events
 

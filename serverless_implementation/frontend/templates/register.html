@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+
+    <link rel="stylesheet" href="/static/css/signup.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="card">
+        <div class="side_img">
+            <img src="/static/image/iitgn_campus.jpeg" alt="img" class="img">
+        </div>
+        <div class="side_img">
+             
+            <form method="post" action="#" class="form active" id="register">
+                <h2>Register</h2>
+                {% with messages = get_flashed_messages() %}
+                    {% if messages %}
+                    <div class="alert alert-danger" role="alert">
+                        {% for message in messages %}
+                            <span style="color: red;">{{ message }}</span><br>
+                        {% endfor %}
+                    </div>
+                    {% endif %}
+                {% endwith %}
+                <label for="firstname">First Name</label>
+                <div class="email_add" onclick="activeInput(this)">
+                    <input type="text" name="first-name" class="email" id="emailInput" placeholder="Vasudev">
+                </div>
+                <label for="lastname">Last Name</label>
+                <div class="email_add" onclick="activeInput(this)">
+                    <input type="text" name="last-name" class="email" id="emailInput" placeholder="Krishna">
+                </div>
+                <label for="email">Email Address</label>
+                <div class="email_add" onclick="activeInput(this)">
+                    <input type="email" name="email" class="email" id="emailInput" placeholder="name@mail.com">
+                </div>
+               
+                <label for="re-password">Select First Tag</label>
+                <div class="email_add" >
+                    <select name="S1" id="" class="password">
+                        <option value="T1" class="">AI/ML Hackathon</option>
+                        <option value="T2">ICC Matches</option>
+                    </select>
+                </div>
+
+                <label for="re-password">Select Second Tag</label>
+                <div class="email_add" >
+                    <select name="S2" id="" class="password">
+                        <option value="T1" class="">AI/ML Hackathon</option>
+                        <option value="T2">ICC Matches</option>
+                    </select>
+                </div>
+
+                <a href="./index.html"></a><button class="btn btn-login">Register</button></a>
+                <p>Do you have an account? <a href="{{ url_for('login') }}">Log in</a></p>
+                <p class="or"></p>
+               
+            </form>
+        </div>
+    </div>
+ 
+    
+</body>
+
+</html>
