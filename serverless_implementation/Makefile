@@ -3,6 +3,4 @@ google-events:
 
 build:
 	pip install -e frontend/.
-
-run:
-	python frontend/app.py
+	python frontend/app.py	
