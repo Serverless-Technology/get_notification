@@ -9,17 +9,11 @@ from flask import (
     flash,
 )
 import json
-from src.helper import current_date, generate_uuid
 from src.helper import generate_uuid
-from werkzeug.utils import secure_filename
+from src.helper import generate_uuid
 import os
-import time
-import base64
-import mysql.connector
-from mysql.connector.conversion import MySQLConverter
 from flask_sse import sse
 from flask import Flask, session
-from flask_session import Session
 
 
 app = Flask(__name__, template_folder="./templates", static_folder="./static")

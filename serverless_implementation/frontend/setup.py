@@ -13,5 +13,6 @@ setup(
         "uuid",
         "flask-sse",
         "flask_session",
+        "requests",
     ],
 )
