@@ -1,0 +1,27 @@
+{
+    "title": "World Town Planning Day",
+    "date": {
+        "start_date": "Nov 8",
+        "when": "Wed, Nov 8"
+    },
+    "address": [
+        "United States",
+        "United States"
+    ],
+    "link": "https://www.tmorra.com/next/American+Planning+Association+-+World+Town+Planning+Day",
+    "event_location_map": {
+        "image": "https://www.google.com/maps/vt/data=kxjyNW6ZbgggH-Jgcqx_aLBetYaomommtxyeAdXFY_KA6UC0eGWEe2z41Sf_Q3sNq0_qd_Wi0w",
+        "link": "https://www.google.com/maps/place//data=!4m2!3m1!1s0x54eab584e432360b:0x1c3bb99243deb742?sa=X&ved=2ahUKEwiV1YGjiKqCAxWrlmoFHUl_Ck0Q9eIBegQIKhAA",
+        "serpapi_link": "https://serpapi.com/search.json?data=%214m2%213m1%211s0x54eab584e432360b%3A0x1c3bb99243deb742&engine=google_maps&google_domain=google.com&hl=en&q=International+Conferences&type=place"
+    },
+    "description": "American Planning Association celebrates World Town Planning Day.",
+    "ticket_info": [
+        {
+            "source": "tmorra.com",
+            "link": "https://www.tmorra.com/next/American+Planning+Association+-+World+Town+Planning+Day",
+            "link_type": "more info"
+        }
+    ],
+    "thumbnail": "https://serpapi.com/searches/654613534b91eba6a522666b/images/8bf258e1882bb72bdeaa093f8056de81b86d7bb239850193d54888aeaead1daf.gif",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSThRNrPGWEONZJ_cgtgnMyUKufVQ3-N3kQVi9bNu5uerqJluLUg3mHTB-Bdw&s=10"
+}

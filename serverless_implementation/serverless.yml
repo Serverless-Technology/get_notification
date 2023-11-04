@@ -66,35 +66,35 @@ functions:
           path: /
           method: get
   createUser:
-    handler: src.create_user.create
+    handler: src.crud.create_user.create
     events:
       - http:
           path: users
           method: post
 
   getUsers:
-    handler: src.get_users.get_users
+    handler: src.crud.get_users.get_users
     events:
       - http:
           path: users
           method: get
 
   getUser:
-    handler: src.get_user.get_user
+    handler: src.crud.get_user.get_user
     events:
       - http:
           path: users/{id}
           method: get
 
   updateUser:
-    handler: src.update_user.update
+    handler: src.crud.update_user.update
     events:
       - http:
           path: users/{id}
           method: put
 
   deleteUser:
-    handler: src.delete_user.delete
+    handler: src.crud.delete_user.delete
     events:
       - http:
           path: users/{id}
