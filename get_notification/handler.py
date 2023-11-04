@@ -1,4 +1,9 @@
 import json
+import boto3
+
+dynamodb = boto3.resource('dynamodb')
+table = dynamodb.Table('Users')
+
 
 
 def hello(event, context):
@@ -22,3 +27,23 @@ def hello(event, context):
         "event": event
     }
     """
+def create_user(event, context):
+    body = json.loads(event['body'])
+    id = body['id']
+    name = body['name']
+    email = body['email']
+    tags = body['tags']
+
+    response = table.put_item(
+        Item={
+            'id': id,
+            'name': name,
+            'email': email,
+            'tags': tags
+        }
+    )
+
+    return {
+        'statusCode': 200,
+        'body': json.dumps({'message': 'User created successfully'})
+    }

@@ -64,28 +64,28 @@ functions:
     handler: handler.hello
   
   createUser:
-    handler: src.crud.create_user
+    handler: handler.create_user
     events:
       - http:
           path: users
           method: post
   
-  updateUser:
+  update_user:
     handler: src.crud.update_user
     events:
       - http:
           path: users
           method: put
   
-  getUser:
+  get_user:
     handler:  src.crud.get_user
     events:
       - http:
           path: users/{id}
           method: get
 
-  deleteUser:
-    handler: deleteUser.delete_user
+  delete_user:
+    handler: src.crud.delete_user
     events:
       - http:
           path: users/{id}
@@ -188,7 +188,7 @@ resources:
 
 plugins:
   - serverless-s3-sync
-
+  - serverless-python-requirements
 custom:
   s3Sync:
     - bucketName: demo-bucket-upload-852146 # required
