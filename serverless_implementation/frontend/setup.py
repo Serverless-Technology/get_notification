@@ -14,7 +14,6 @@ setup(
         "razorpay",
         "uuid",
         "flask-sse",
-        "mysql-connector",
         "flask_session",
     ],
 )
