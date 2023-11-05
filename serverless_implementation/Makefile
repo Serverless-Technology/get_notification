@@ -2,5 +2,5 @@ google-events:
 	python src/google_events/data_fetch.py
 
 build:
-	pip install -e frontend/.
+	pip install -r requirements.txt
 	python frontend/app.py	
