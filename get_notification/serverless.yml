@@ -25,6 +25,7 @@ provider:
   runtime: python3.11
   profile: AWSUser
 
+
 # you can overwrite defaults here
 #  stage: dev
 #  region: us-east-1
@@ -62,13 +63,12 @@ provider:
 functions:
   hello:
     handler: handler.hello
-  
-  createUser:
-    handler: src.crud.create_user
     events:
-      - http:
-          path: users
-          method: post
+      - s3:
+          bucket: data-fetch-bucket
+          event: s3:ObjectCreated:*
+
+  
 #    The following are a few example events you can configure
 #    NOTE: Please make sure to change your handler code to work with those events
 #    Check the event documentation for details
@@ -121,54 +121,56 @@ functions:
 #       Description: "Description for the output"
 #       Value: "Some output value"
 
-resources:
-  Resources:
-    DemoBucketUpload:
-      Type: AWS::S3::Bucket
-      Properties:
-        BucketName: demo-bucket-upload-852146
+# resources:
+#   Resources:
+#     DataFetchBucket:
+#       Type: AWS::S3::Bucket
+#       Properties:
+#         BucketName: data-fetch-bucket
     
-    usersTable:
-      Type: AWS::DynamoDB::Table
-      Properties:
-        TableName: UserData
-        AttributeDefinitions:
-          - AttributeName: id
-            AttributeType: S
-          - AttributeName: name
-            AttributeType: S
-          - AttributeName: email
-            AttributeType: S
-          - AttributeName: tags
-            AttributeType: S
-        KeySchema:
-          - AttributeName: id
-            KeyType: HASH
-          - AttributeName: name
-            KeyType: RANGE
-        ProvisionedThroughput:
-          ReadCapacityUnits: 1
-          WriteCapacityUnits: 1
-        GlobalSecondaryIndexes:
-          - IndexName: email-index
-            KeySchema:
-              - AttributeName: email
-                KeyType: HASH
-              - AttributeName: tags
-                KeyType: RANGE
-            Projection: 
-              NonKeyAttributes: 
-                - email
-                - tags
-              ProjectionType: INCLUDE
-            ProvisionedThroughput: 
-              ReadCapacityUnits: 5
-              WriteCapacityUnits: 5
+  
+    # usersTable:
+    #   Type: AWS::DynamoDB::Table
+    #   Properties:
+    #     TableName: UserData
+    #     AttributeDefinitions:
+    #       - AttributeName: id
+    #         AttributeType: S
+    #       - AttributeName: name
+    #         AttributeType: S
+    #       - AttributeName: email
+    #         AttributeType: S
+    #       - AttributeName: tags
+    #         AttributeType: S
+    #     KeySchema:
+    #       - AttributeName: id
+    #         KeyType: HASH
+    #       - AttributeName: name
+    #         KeyType: RANGE
+    #     ProvisionedThroughput:
+    #       ReadCapacityUnits: 1
+    #       WriteCapacityUnits: 1
+    #     GlobalSecondaryIndexes:
+    #       - IndexName: email-index
+    #         KeySchema:
+    #           - AttributeName: email
+    #             KeyType: HASH
+    #           - AttributeName: tags
+    #             KeyType: RANGE
+    #         Projection: 
+    #           NonKeyAttributes: 
+    #             - email
+    #             - tags
+    #           ProjectionType: INCLUDE
+    #         ProvisionedThroughput: 
+    #           ReadCapacityUnits: 5
+    #           WriteCapacityUnits: 5
 
 plugins:
   - serverless-s3-sync
+  - serverless-python-requirements
 
 custom:
   s3Sync:
-    - bucketName: demo-bucket-upload-852146 # required
-      localDir: events # required
+    - bucketName: data-fetch-bucket # required
+      localDir: events
