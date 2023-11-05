@@ -168,7 +168,6 @@ functions:
 
 plugins:
   - serverless-s3-sync
-  - serverless-python-requirements
 
 custom:
   s3Sync:

@@ -1,5 +1,6 @@
 import json
 import boto3
+from botocore.exceptions import ClientError
 
 dynamodb = boto3.resource('dynamodb')
 table = dynamodb.Table('Users')
@@ -10,20 +11,29 @@ def create_user(event, context):
     name = body['name']
     email = body['email']
     tags = body['tags']
-
-    response = table.put_item(
-        Item={
-            'id': id,
-            'name': name,
-            'email': email,
-            'tags': tags
+    
+    # KNative
+    try:
+        table.put_item(
+            Item={
+                'id': id,
+                'name': name,
+                'email': email,
+                'tags': tags
+            }
+        )
+        
+        response = {
+            'statusCode': 200,
+            'body': json.dumps({'message': f"User: {name} created successfully"})
         }
-    )
+    except ClientError as e:
+        response = {
+            'statusCode': 500,
+            'body': json.dumps({'error': str(e)})
+        }
 
-    return {
-        'statusCode': 200,
-        'body': json.dumps({'message': 'User created successfully'})
-    }
+    return response
 
 
 
