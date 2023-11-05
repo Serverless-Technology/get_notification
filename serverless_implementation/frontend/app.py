@@ -40,7 +40,7 @@ def login():
                 session["logged_in"] = True
                 session["uid"] = user["id"]
                 session["session_name"] = user["name"]
-                return redirect(url_for("callback"))
+                return redirect(url_for("index"))
         flash("Incorrect Login Credentials", "danger")
     return render_template("login.html")
 
