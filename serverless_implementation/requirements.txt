@@ -1,0 +1,8 @@
+flask
+gunicorn
+python-dotenv
+passlib
+uuid
+flask-sse
+flask-session
+requests
