@@ -76,7 +76,8 @@ def register():
 
 @app.route("/callback", methods=["GET", "POST"])
 def index():
-    print(session)
+    #print(session)
+    return render_template("login.html")
     # if "uid" not in session:
     #     flash("Please login to continue", "danger")
     #     return redirect(url_for("login"))
@@ -111,4 +112,7 @@ def index():
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    from waitress import serve
+
+    # Adjust the host and port as needed
+    serve(app, host="0.0.0.0", port=5000)

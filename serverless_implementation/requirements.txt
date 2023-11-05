@@ -1,5 +1,6 @@
 flask
 gunicorn
+waitress
 python-dotenv
 passlib
 uuid
