@@ -1,5 +1,5 @@
 import requests
-from ..src.tags import *
+from serverless_implementation.src.tags import *
 from flask import (
     Flask,
     render_template,
