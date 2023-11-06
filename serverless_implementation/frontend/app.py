@@ -1,5 +1,5 @@
 import requests
-from serverless_implementation.src.tags import *
+from src.tags import TAGS
 from flask import (
     Flask,
     render_template,
@@ -15,6 +15,7 @@ from src.helper import generate_uuid
 import os
 from flask_sse import sse
 from flask import Flask, session
+from waitress import serve
 
 
 app = Flask(__name__, template_folder="./templates", static_folder="./static")
@@ -77,7 +78,7 @@ def register():
 
 @app.route("/callback", methods=["GET", "POST"])
 def index():
-    #print(session)
+    # print(session)
     # if "uid" not in session:
     #     flash("Please login to continue", "danger")
     #     return redirect(url_for("login"))
@@ -95,7 +96,7 @@ def index():
     if request.method == "POST":
         form_details = request.form
         try:
-            tag_name= form_details["cat"]
+            tag_name = form_details["cat"]
         except:
             tag_name = "0"
         if tag_name != "0":
@@ -106,7 +107,5 @@ def index():
 
 
 if __name__ == "__main__":
-    from waitress import serve
-
     # Adjust the host and port as needed
     serve(app, host="0.0.0.0", port=5000)

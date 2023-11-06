@@ -14,5 +14,6 @@ setup(
         "flask-sse",
         "flask_session",
         "requests",
+        "waitress",
     ],
 )
