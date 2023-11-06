@@ -1,1 +1,1 @@
-from tags import TAGS
+# from serverless_implementation.frontend.src.tags import TAGS
