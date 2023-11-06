@@ -3,4 +3,3 @@ google-events:
 
 build:
 	pip install -r requirements.txt
-	python frontend/app.py	
