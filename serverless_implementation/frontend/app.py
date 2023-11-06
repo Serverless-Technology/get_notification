@@ -15,7 +15,6 @@ from src.helper import generate_uuid
 import os
 from flask_sse import sse
 from flask import Flask, session
-from waitress import serve
 
 
 app = Flask(__name__, template_folder="./templates", static_folder="./static")
@@ -108,4 +107,4 @@ def index():
 
 if __name__ == "__main__":
     # Adjust the host and port as needed
-    serve(app, host="0.0.0.0", port=5000)
+    app.run()
