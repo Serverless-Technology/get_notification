@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/static/css/index.css">
-    <title>BuySellPortal</title>
+    <title>Notification Service</title>
 </head>
 <body>
 <link href="/static/css/style.css" rel="stylesheet" type="text/css" />
@@ -18,46 +18,26 @@
   <nav class="navbar">
     <ul>
 
-      <li id="a1"><b>CDSLite</b></li>
-      <li id="a2">
-       
-        <form action="" method="post">
-            <select class = "search-box" id="cat" name="cat" onchange="displaySelectedValue()">
-                <option disabled selected value="0">Select Category</option>
-                <option value = "0">All</option>
-                {% for j in catlist %}
-                  <OPTION value={{j["categoryID"]}}>{{j['catName']}}</OPTION>
-                {% endfor %}
-              </select>
-            <button id="search-btn"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-                </svg>
-            </button>
-        </form>
-        </li>
-        <li id="a3"><a href="{{ url_for('index') }}">Bid</a></li>
-        <li id="a3"><a href="{{ url_for('Barter') }}">Barter</a></li>
-        <li id="a3"><a href="{{ url_for('merchandise') }}">Merchandise</a></li>
-        <li id="a3"><a href="/index/shopping_cart"><img src="/static/image/cart.png" alt="" class="carim"></a></li>
-        <li id="a3">
-            <div class="profile_dropdown">
-                <button class="profile"><img src="/static/image/user.png" class="carim1" alt=""></button>
-                <div class="profile-content">
-                    <a href="/read_user">Edit Profile</a>
-                    <a href="{{ url_for('product') }}">Add Product</a>
-                    <a href="{{ url_for('myproducts') }}">My Product</a>
-                    <a href="#">My order</a>
-                    <a href="/logout">log Out</a>
-                    <a href="{{ url_for('delete_user') }}" id="delete_user">Delete Account</a>   
-                </div>
-            
-            </div>
-          
-        </li>
+      <li id="a1"><b>Notification Service</b></li>
     </ul>
   </nav>
-  
 </header>
+<div class="cont">
+  <h2>Choose the tag and click on submit to get notified about the releavant information</h2>
+</div>
+  <div class="form">
+    <form action="" method="post">
+        <select class = "search-box" id="cat" name="cat" onchange="displaySelectedValue()">
+            <option disabled selected value="0">Select Tag</option>
+            <option value = "0">All</option>
+            {% for j in taglist %}
+              <OPTION value={{j}}>{{j}}</OPTION>
+            {% endfor %}
+          </select>
+        <button id="search-btn">Submit
+        </button>
+    </form>
+  </div>  
 
     {% with messages = get_flashed_messages() %}
                 {% if messages %}
@@ -68,23 +48,5 @@
                 </div>
                 {% endif %}
             {% endwith %}
-
-    <div class="card">
-
-        <div class="product_container"></div> 
-
-         <script src="/static/js/index.js"></script>
-        <script>
-        //   const products = [
-        //     {name: 'Blithchron Hoodie', price: 'Rs.800', imageUrl: "hoodie.jpg"},
-        //     {name: 'Blithchron Hoodie', price: 'Rs.800', imageUrl: 'hoodie.jpg'},
-        //     {name: 'Blithchron Hoodie', price: 'Rs.800', imageUrl: 'hoodie.jpg'},
-        //     {name: 'Blithchron Hoodie', price: 'Rs.800', imageUrl: 'hoodie.jpg'},
-        //     {name: 'Blithchron Hoodie', price: 'Rs.800', imageUrl: 'hoodie.jpg'}
-        //   ];
-          new_vp = {{vplist|tojson}};
-          createProductCards(new_vp);
-        </script>
-    </div>
 </body>
 </html>

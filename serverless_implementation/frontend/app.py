@@ -1,4 +1,5 @@
 import requests
+from serverless_implementation.src.tags import *
 from flask import (
     Flask,
     render_template,
@@ -71,13 +72,12 @@ def register():
         flash("You are now registered and can login", "success")
         return redirect(url_for("login"))
 
-    return render_template("register.html")
+    return render_template("register.html", taglist=TAGS)
 
 
 @app.route("/callback", methods=["GET", "POST"])
 def index():
     #print(session)
-    return render_template("login.html")
     # if "uid" not in session:
     #     flash("Please login to continue", "danger")
     #     return redirect(url_for("login"))
@@ -92,23 +92,17 @@ def index():
     # catlist = cur.fetchall()
 
     # query = f"select * from VP_Products where Availability='Yes'"
-    # if request.method == "POST":
-    #     form_details = request.form
-    #     try:
-    #         cat_id = form_details["cat"]
-    #     except:
-    #         cat_id = "0"
-    #     if cat_id != "0":
-    #         query = f"select * from VP_Products where Availability='Yes' and CategoryID = '{cat_id}'"
-    # try:
-    #     cur.execute(query)
-    # except Exception as e:
-    #     raise Exception(f"UNable to run query. Error: {e}")
-    # vplist = cur.fetchall()
-    # if vplist == None:
-    #     flash("There are no products available for Bid")
-    # print(vplist)
-    # return render_template("index.html", vplist=vplist, catlist=catlist)
+    if request.method == "POST":
+        form_details = request.form
+        try:
+            tag_name= form_details["cat"]
+        except:
+            tag_name = "0"
+        if tag_name != "0":
+            flash("The relevant tag information will be notified to you soon")
+            return redirect(url_for("index"))
+
+    return render_template("index.html", taglist=TAGS)
 
 
 if __name__ == "__main__":
