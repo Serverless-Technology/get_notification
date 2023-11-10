@@ -2,23 +2,41 @@ import os
 import json
 import shutil
 from serpapi import GoogleSearch
+from config import SRC_PATH, DEST_PATH
+from src.storage.upload_model import get_storage_instance, upload_event
 
 
 def save_file(count, event, dir_path):
-    count=count+1
-    file_name=f"{dir_path}/{count}"
-    with open(f'{file_name}.json', 'w', encoding='utf-8') as json_file:
+    count = count + 1
+    file_name = f"{dir_path}/{count}"
+    with open(f"{file_name}.json", "w", encoding="utf-8") as json_file:
         print(f"Saving file {file_name}.json")
         json.dump(event, json_file, ensure_ascii=False, indent=4)
+    return
+
+
+def upload_to_bucket(count, event, tag):
+    storage = get_storage_instance(path=f"{DEST_PATH}")
+    count = count + 1
+    file_name = f"./events/{tag}/{count}"
+    with open(f"{file_name}.json", "w", encoding="utf-8") as json_file:
+        json.dump(event, json_file, ensure_ascii=False, indent=4)
+
+    dst_path = f"{DEST_PATH}/{tag}/{count}.json"
+    src_path = f"{SRC_PATH}/{tag}/{count}.json"
+    upload_event(storage, src_path, dst_path, max_attempts=3)
+    print(f"Removing file {file_name}.json from local Events directory")
+    os.remove(f"{file_name}.json")
+
 
 def fetch_google_data(tag):
-    DIR_PATH = f"./src/google_events/events/{tag}"
+    DIR_PATH = f"./events/{tag}"
     params = {
-    "engine": "google_events",
-    "q": tag,
-    "hl": "en",
-    "gl": "us",
-    "api_key": "f5bca446203ba13b76ece776baef70e7da283e15fa26f3e612c12303c658b58c"
+        "engine": "google_events",
+        "q": tag,
+        "hl": "en",
+        "gl": "us",
+        "api_key": "f5bca446203ba13b76ece776baef70e7da283e15fa26f3e612c12303c658b58c",
     }
 
     try:
@@ -26,15 +44,20 @@ def fetch_google_data(tag):
         results = search.get_dict()
         events_results = results["events_results"]
     except Exception as e:
-        print(e)
+        print(f"Error occured while fetching data: {e}")
+        return
 
     if not os.path.exists(DIR_PATH):
         print("Directory does not exist, creating directory...")
         os.makedirs(DIR_PATH)
-    else :
-        print("Directory already exists, removing all files and recreating the directory...")
+    else:
+        print(
+            "Directory already exists, removing all files and recreating the directory..."
+        )
         shutil.rmtree(DIR_PATH)
         os.makedirs(DIR_PATH)
-    
+
     for count, event in enumerate(events_results):
         save_file(count, event, DIR_PATH)
+        upload_to_bucket(count, event, tag)
+    os.rmdir(DIR_PATH)

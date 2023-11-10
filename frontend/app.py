@@ -76,7 +76,7 @@ def register():
     return render_template("register.html", taglist=TAGS)
 
 
-@app.route("/callback", methods=["GET", "POST"])
+@app.route("/index", methods=["GET", "POST"])
 def index():
     # print(session)
     # if "uid" not in session:
@@ -102,6 +102,9 @@ def index():
         if tag_name != "0":
             flash("The relevant tag information will be notified to you soon")
             fetch_google_data(tag_name)
+            flash(
+                "The relevant tag information has been stored to our database and notification is on the way"
+            )
             return redirect(url_for("index"))
 
     return render_template("index.html", taglist=TAGS)
