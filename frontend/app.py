@@ -42,6 +42,7 @@ def login():
                 session["logged_in"] = True
                 session["uid"] = user["id"]
                 session["session_name"] = user["name"]
+                session["email"] = user["email"]
                 return redirect(url_for("index"))
         flash("Incorrect Login Credentials", "danger")
     return render_template("login.html")
@@ -55,16 +56,19 @@ def register():
         first_name = user_details["first-name"]
         last_name = user_details["last-name"]
         email = user_details["email"]
-        tag1 = user_details["S1"]
-        tag2 = user_details["S2"]
-        if tag1 == tag2:
-            flash("You need to select two distince tags", "danger")
-            return render_template("register.html")
+        tags = request.form.getlist("tags")
+        # tag2 = user_details["S2"]
+        # if tag1 == tag2:
+        #     flash("You need to select two distince tags", "danger")
+        #     return render_template("register.html")
+        tags_to_str = ""
+        for tag in tags:
+            tags_to_str += tag + ","
         params = {
             "id": str(generate_uuid()),
             "name": first_name + " " + last_name,
             "email": email,
-            "tags": tag1 + "," + tag2,
+            "tags": tags_to_str,
         }
         payload = json.dumps(params)
         headers = {"Content-Type": "text/plain"}

@@ -43,21 +43,24 @@
                     <input type="email" name="email" class="email" id="emailInput" placeholder="name@mail.com">
                 </div>
                
-                <label for="re-password">Select First Tag</label>
+                <label for="re-password">Select Tags</label>
                 <div class="email_add" >
-                    <select name="S1" id="" class="password">
-                        <option value="T1" class="">AI/ML Hackathon</option>
-                        <option value="T2">ICC Matches</option>
-                    </select>
+                    {% for j in taglist %}
+                        <input type="checkbox" id="{{ j }}" name="tags" value="{{ j }}">
+                        <label for="{{ j }}">{{ j }}</label><br>
+                    {% endfor %}
                 </div>
 
-                <label for="re-password">Select Second Tag</label>
+                <!-- <label for="re-password">Select Second Tag</label>
                 <div class="email_add" >
-                    <select name="S2" id="" class="password">
-                        <option value="T1" class="">AI/ML Hackathon</option>
-                        <option value="T2">ICC Matches</option>
+                    <select class = "search-box" id="cat" name="S2" onchange="displaySelectedValue()">
+                        <option disabled selected value="0">Select Tag</option>
+                        <option value = "0">All</option>
+                        {% for j in taglist %}
+                        <OPTION value={{j}}>{{j}}</OPTION>
+                        {% endfor %}
                     </select>
-                </div>
+                </div> -->
 
                 <a href="./index.html"></a><button class="btn btn-login">Register</button></a>
                 <p>Do you have an account? <a href="{{ url_for('login') }}">Log in</a></p>

@@ -5,7 +5,6 @@ from serpapi import GoogleSearch
 from config import SRC_PATH, DEST_PATH
 from src.storage.upload_model import get_storage_instance, upload_event
 
-
 def save_file(count, event, dir_path):
     count = count + 1
     file_name = f"{dir_path}/{count}"
