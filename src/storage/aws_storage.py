@@ -1,11 +1,16 @@
+import os
 import boto3
 from botocore.exceptions import ClientError
 from copy import copy
 
 from .base import Storage
-from config import AWS_ACCESSS_KEY, AWS_ACCESS_SECRET
+from dotenv import load_dotenv
 
+load_dotenv()
+# from config import AWS_ACCESSS_KEY, AWS_ACCESS_SECRET
 
+AWS_ACCESSS_KEY = os.environ.get("AWS_ACCESS_KEY")
+AWS_ACCESS_SECRET = os.environ.get("AWS_ACCESS_SECRET")
 class AmazonWebStorage(Storage):
     def __init__(
         self,
@@ -25,6 +30,7 @@ class AmazonWebStorage(Storage):
         return s3_resource, s3_client
 
     def get_storage_bucket(self, src_path):
+        print("src_path= ", src_path)
         bucket_name = src_path.split("/")[2]
         return self.resource.Bucket(bucket_name)
 

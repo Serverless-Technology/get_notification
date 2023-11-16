@@ -11,10 +11,10 @@
 #
 # Happy Coding!
 
-service: serverless-implementation
+service: notification-service
 # app and org for use with dashboard.serverless.com
-#app: your-app-name
-#org: your-org-name
+app: notification-service
+org: mannjain
 
 # You can pin your service to only deploy with a specific Serverless version
 # Check out our docs for more details
@@ -179,12 +179,6 @@ resources:
           ReadCapacityUnits: 1
           WriteCapacityUnits: 1
 
+
 plugins:
   - serverless-python-requirements
-  # - serverless-s3-sync
-
-# custom:
-#   s3Sync:
-#     - bucketName: data-fetch-bucket
-#       localDir: ./src/google_events/events
-

@@ -4,6 +4,7 @@ import json
 from flask import current_app
 
 SENDER_MAIL = os.environ.get('SENDER_MAIL')
+SENDER_NAME = os.environ.get('SENDER_NAME')
 RECEIVER_MAIL = current_app.config['session'].get('email')
 MAIL_SUBJECT = "Event Notification"
 
@@ -34,7 +35,7 @@ def send_mail(sender: str, subject: str, body: str, receivers: list = None, atta
 
 def notify(event,context):
     receiver = list(RECEIVER_MAIL)
-    sender = SENDER_MAIL
+    sender = SENDER_NAME + "<" + SENDER_MAIL + ">"
     subject = MAIL_SUBJECT
     response = send_mail(sender, subject,event, receiver)
     if response.status_code == 200:

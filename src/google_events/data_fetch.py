@@ -2,8 +2,14 @@ import os
 import json
 import shutil
 from serpapi import GoogleSearch
-from config import SRC_PATH, DEST_PATH
+# from config import SRC_PATH, DEST_PATH
 from src.storage.upload_model import get_storage_instance, upload_event
+from dotenv import load_dotenv
+
+load_dotenv()
+
+SRC_PATH = os.environ.get("SRC_PATH")
+DEST_PATH = os.environ.get("DEST_PATH")
 
 def save_file(count, event, dir_path):
     count = count + 1
@@ -15,6 +21,7 @@ def save_file(count, event, dir_path):
 
 
 def upload_to_bucket(count, event, tag):
+    print("Now to upload, path= ", DEST_PATH)
     storage = get_storage_instance(path=f"{DEST_PATH}")
     count = count + 1
     file_name = f"./events/{tag}/{count}"
