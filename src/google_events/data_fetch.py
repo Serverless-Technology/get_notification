@@ -3,9 +3,8 @@ import json
 import shutil
 from datetime import date
 from serpapi import GoogleSearch
-# from config import SRC_PATH, DEST_PATH
+from config import SRC_PATH, DEST_PATH
 from src.storage.upload_model import get_storage_instance, upload_event
-
 
 def upload_to_bucket(count, event, tag, user_email):
     storage = get_storage_instance(path=f"{DEST_PATH}")
