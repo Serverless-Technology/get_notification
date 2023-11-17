@@ -16,6 +16,9 @@ import os
 from flask_sse import sse
 from flask import Flask, session
 from src.google_events.data_fetch import fetch_google_data
+from src.notifications.notify_user import send_mail
+
+SENDER_MAIL = os.environ.get("SENDER_MAIL")
 
 
 app = Flask(__name__, template_folder="./templates", static_folder="./static")
@@ -104,11 +107,16 @@ def index():
         except:
             tag_name = "0"
         if tag_name != "0":
-            flash("The relevant tag information will be notified to you soon")
             fetch_google_data(tag_name)
-            flash(
-                "The relevant tag information has been stored to our database and notification is on the way"
-            )
+            flash("The relevant tag information has been stored to our database")
+            user_email = session["email"]
+            sender = SENDER_MAIL
+            try:
+                send_mail(sender, "Test Mail", "This is Test", [user_email])
+                flash("Email sent successfully!")
+            except Exception as e:
+                flash("Error sending email: {response.status_code} - {response.text}")
+                print(e)
             return redirect(url_for("index"))
 
     return render_template("index.html", taglist=TAGS)
