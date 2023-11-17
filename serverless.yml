@@ -59,12 +59,12 @@ provider:
 #    - include-me-dir/**
 
 functions:
-  hello:
-    handler: handler.hello
-    events:
-      - http:
-          path: /
-          method: get
+  # hello:
+  #   handler: handler.hello
+  #   events:
+  #     - http:
+  #         path: /
+  #         method: get
   createUser:
     handler: src.crud.create_user.create
     events:
@@ -100,14 +100,17 @@ functions:
           path: users/{id}
           method: delete
 
-  # notifyUser:
-  #   handler: src.notifications.notify_user.notify
-  #   events:
-  #     - s3:
-  #         bucket: data-fetch-bucket
-  #         event: s3:ObjectCreated:*
-  #         existing: true
-  #         forceDeploy: true
+  notifyUser:
+    handler: src.notifications.notify_user.notify
+    events:
+      - s3:
+          bucket: data-fetch-bucket
+          event: s3:ObjectCreated:*
+          existing: true
+          rules:
+            - prefix: google-events/{mail}/{tag}
+            - suffix: .json
+          # forceDeploy: true
 #    The following are a few example events you can configure
 #    NOTE: Please make sure to change your handler code to work with those events
 #    Check the event documentation for details
@@ -179,8 +182,10 @@ resources:
           ReadCapacityUnits: 1
           WriteCapacityUnits: 1
 
-# plugins:
-#   - serverless-python-requirements
+package:
+  individually: true
+  include:
+    - requirements/**
   # - serverless-s3-sync
 
 # custom:

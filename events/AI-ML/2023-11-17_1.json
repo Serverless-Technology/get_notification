@@ -1,32 +1,26 @@
 {
-    "title": "The AI/ML Inaugural Annual Meeting",
+    "title": "AI & Big Data Expo Global 2023",
     "date": {
-        "start_date": "Feb 8",
-        "when": "Thu, Feb 8, 8:30 AM – 3:30 PM"
+        "start_date": "Nov 30",
+        "when": "Thu, Nov 30 – Fri, Dec 1"
     },
     "address": [
-        "BuiltWorlds, 515 N State St 14th Floor",
-        "Chicago, IL"
+        "United States",
+        "United States"
     ],
-    "link": "https://builtworlds.com/event/ai-ml-inaugural-annual-meeting/",
+    "link": "https://gtmdelta.com/event/ai-big-data-expo-global-2023/",
     "event_location_map": {
-        "image": "https://www.google.com/maps/vt/data=DuZ92StH2PUawSk9Td6Mqhy_2VyzRp3b8dUysVAsc-hMsevWsPvUC4iL7lTG3v3RDvRBqX7iZCJf5CzP5Ka9XHWe9cgZz5O5gkfn5mdRYwJR96oU0i8",
-        "link": "https://www.google.com/maps/place//data=!4m2!3m1!1s0x880e2cdf296d1fb1:0x54729ce8376133c4?sa=X&ved=2ahUKEwjgjI_SucqCAxWjjYkEHZcABkcQ9eIBegQIARAA&hl=en&gl=us",
-        "serpapi_link": "https://serpapi.com/search.json?data=%214m2%213m1%211s0x880e2cdf296d1fb1%3A0x54729ce8376133c4&engine=google_maps&google_domain=google.com&hl=en&q=AI-ML&type=place"
+        "image": "https://www.google.com/maps/vt/data=kxjyNW6ZbgggH-Jgcqx_aLBetYaomommtxyeAdXFY_KA6UC0eGWEe2z41Sf_Q3sNq0_qd_Wi0w",
+        "link": "https://www.google.com/maps/place//data=!4m2!3m1!1s0x54eab584e432360b:0x1c3bb99243deb742?sa=X&ved=2ahUKEwjik7vt3sqCAxUflmoFHVY4AMYQ9eIBegQIABAA",
+        "serpapi_link": "https://serpapi.com/search.json?data=%214m2%213m1%211s0x54eab584e432360b%3A0x1c3bb99243deb742&engine=google_maps&google_domain=google.com&hl=en&q=AI-ML&type=place"
     },
-    "description": "Event Overview In the dynamic landscape of AEC, a critical transformation is underway — an evolution fueled by data, guided by strategy, and empowered by artificial intelligence and machine...",
+    "description": "With 250+ speakers, 5,000+ attendees, our AI-powered matchmaking tool, live sessions and access to 5 co-located shows, this is not a conference to be missed!",
     "ticket_info": [
         {
-            "source": ".sjBi9c.sjBi9c::after{content:none}.qwJzfb{flex-shrink:0}.BYbUcd{overflow:hidden;}.BYbUcd img{height:100%;width:100%}BuiltWorlds",
-            "link": "https://builtworlds.com/event/ai-ml-inaugural-annual-meeting/",
+            "source": ".sjBi9c.sjBi9c::after{content:none}.qwJzfb{flex-shrink:0}.BYbUcd{overflow:hidden;}.BYbUcd img{height:100%;width:100%}GTM Delta",
+            "link": "https://gtmdelta.com/event/ai-big-data-expo-global-2023/",
             "link_type": "more info"
         }
     ],
-    "venue": {
-        "name": "BuiltWorlds",
-        "reviews": 7,
-        "link": "https://www.google.com/search?sca_esv=583261567&hl=en&gl=us&q=BuiltWorlds&ludocid=6085098567706424260&ibp=gwp%3B0,7"
-    },
-    "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMUf_7yy4PALx8OdEsXo3IBpvyVXgAq_J0WbPNL83KBeBNCJekWmZjUc4&s",
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmQp9svxJURe9zv-oBjcBapKlyO2m_CmmltQVEy7IwjavxcBy12RsXp01_LA&s=10"
+    "thumbnail": "https://www.google.com/maps/vt/data=kxjyNW6ZbgggH-Jgcqx_aLBetYaomommtxyeAdXFY_KA6UC0eGWEe2z41Sf_Q3sNq0_qd_Wi0w"
 }

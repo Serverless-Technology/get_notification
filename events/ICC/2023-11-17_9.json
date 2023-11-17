@@ -1,32 +1,31 @@
 {
-    "title": "ICC World Cup Final match -Live Screening in...",
+    "title": "ICC, NELSON KANZELA Y MAS",
     "date": {
-        "start_date": "Nov 19",
-        "when": "Sun, Nov 19, 2:00 – 10:30 PM"
+        "start_date": "Nov 17",
+        "when": "Fri, Nov 17, 7 PM CST"
     },
     "address": [
-        "Sree Gopi Krishna Complex, 13, Muthamman Koil St, Gopal Pillai Nagar, Bharathi Nagar, Ayanavaram",
-        "Chennai, Tamil Nadu, India"
+        "Estrellas Del Millenium, 850 N State St",
+        "Elgin, IL"
     ],
-    "link": "https://insider.in/icc-world-cup-final-match-live-screening-in-chennai-big-screen-nov19-2023/event",
+    "link": "https://www.stubhub.com/estrellas-del-millenium-tickets/venue/102597047/",
     "event_location_map": {
-        "image": "https://www.google.com/maps/vt/data=zo0P6MvSnogRl_MYzVMtRJyGhsLDd9V-mic55GPKEjP6IHdGLLV9qJxR6aFSntSg0gTuwekD2GL3gERyYQ1ZF_npo2nJwdY7j5jCF5vToIh-QfiEN0Q",
-        "link": "https://www.google.com/maps/place//data=!4m2!3m1!1s0x3a526433d29e6a45:0x595378557b413718?sa=X&ved=2ahUKEwjC3tbYvsqCAxUtF1kFHenSAg4Q9eIBegQIQBAA&hl=en&gl=us",
-        "serpapi_link": "https://serpapi.com/search.json?data=%214m2%213m1%211s0x3a526433d29e6a45%3A0x595378557b413718&engine=google_maps&google_domain=google.com&hl=en&q=ICC&type=place"
+        "image": "https://www.google.com/maps/vt/data=syDBe4ISJrjQg5hNXZbqwNj1Ms9nfsAIa4Wn6jC_WhtsVWf3SaDtIAhSHjyuky77vwlqYybsksF-ujE1mRjnc27oG4d09krPY3ha4R7RS-Q2d-kF0Eg",
+        "link": "https://www.google.com/maps/place//data=!4m2!3m1!1s0x880f056fccf45055:0x187170f752ada6dc?sa=X&ved=2ahUKEwjKmreP3sqCAxVfkmoFHWPWA3sQ9eIBegQIQRAA",
+        "serpapi_link": "https://serpapi.com/search.json?data=%214m2%213m1%211s0x880f056fccf45055%3A0x187170f752ada6dc&engine=google_maps&google_domain=google.com&hl=en&q=ICC&type=place"
     },
-    "description": "ICC Mens Cricket World Cup Final Match on Nov 19 2 PM onwards -Live streaming the Match in Biggest Screen in ChennaiBest Theaterical Sound systemsIndoor venue with AC and cushion or pushback...",
     "ticket_info": [
         {
-            "source": "Insider.in",
-            "link": "https://insider.in/icc-world-cup-final-match-live-screening-in-chennai-big-screen-nov19-2023/event",
-            "link_type": "tickets"
+            "source": "StubHub",
+            "link": "https://www.stubhub.com/estrellas-del-millenium-tickets/venue/102597047/",
+            "link_type": "more info"
         }
     ],
     "venue": {
-        "name": "Sree Gopi Krishna Complex",
-        "reviews": 3252,
-        "link": "https://www.google.com/search?sca_esv=583261567&hl=en&gl=us&q=Sree+Gopi+Krishna+Complex&ludocid=6436620600977995544&ibp=gwp%3B0,7"
+        "name": "Estrellas Del Millenium",
+        "reviews": 88,
+        "link": "https://www.google.com/search?sca_esv=583292559&q=Estrellas+Del+Millenium&ludocid=1761313136824919772&ibp=gwp%3B0,7"
     },
-    "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQG3lBjmSfrRLGdd8tkq3ONLbZXphj_3sC44WJdncl7VYIhUbOsgmYTJUc&s",
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdhlgQfPPdBnU5VlC_hp4d9ClwqPQpbl5fDyfp97VGlw&s"
+    "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJAGYqkym1OTGRDc6YHHR61Z4upRlPQZjOYiT2H-5ASbD0qxkYYhswcGo&s",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0zQCNSojn_D0S1rYvGGVbA7-nhWThSGfgYFASRzxBdQ&s"
 }

@@ -1,46 +1,52 @@
 {
-    "title": "Cricket World Cup 2023 - Final Tickets",
+    "title": "Devo",
     "date": {
-        "start_date": "Nov 18",
-        "when": "Sat, Nov 18, 7:00 PM – Sun, Nov 19, 6:30 PM"
+        "start_date": "Nov 26",
+        "when": "Sun, Nov 26"
     },
     "address": [
-        "Narendra Modi Stadium, Stadium Rd, Parvati Nagar, Motera",
-        "Ahmedabad, Gujarat, India"
+        "ICC Sydney, 14 Darling Dr",
+        "Sydney NSW, Australia"
     ],
-    "link": "https://in.bookmyshow.com/sports/ahmedabad-icc-mens-cwc-2023/ET00367204",
-    "description": "Narendra Modi Stadium is one of the Premier cricket stadiums of India located in Motera, Ahmedabad. Built on the banks of the Sabarmati River in the outskirts of Ahmedabad, the stadium was...",
+    "link": "https://www.darlingharbour.com/whats-on/events/devo",
+    "event_location_map": {
+        "image": "https://www.google.com/maps/vt/data=fhadBb9iISI6rra0CjbvLmAV-31ls-K9fn8_iiAZmO7ilzDfaK7Zllt2LG9HedsU6a4xwrFaeJIqYIhtKM49YwYF06wHRSvS5bjW-iTjPzYe-8womng",
+        "link": "https://www.google.com/maps/place//data=!4m2!3m1!1s0x6b12ae38ab9a3ff3:0x19fc67061ce45a9?sa=X&ved=2ahUKEwjKmreP3sqCAxVfkmoFHWPWA3sQ9eIBegQIARAA",
+        "serpapi_link": "https://serpapi.com/search.json?data=%214m2%213m1%211s0x6b12ae38ab9a3ff3%3A0x19fc67061ce45a9&engine=google_maps&google_domain=google.com&hl=en&q=ICC&type=place"
+    },
+    "description": "Produced by Brian Eno, 1978’s “Q: Are We Not Men? A: We Are Devo!” ignited underground fame with its call-to-arms sound. DEVO’s unconventional image and themes sparked both admiration and...",
     "ticket_info": [
         {
-            "source": ".sjBi9c.sjBi9c::after{content:none}.qwJzfb{flex-shrink:0}.BYbUcd{overflow:hidden;}.BYbUcd img{height:100%;width:100%}Stubhub.com",
-            "link": "https://www.stubhub.com/cricket-world-cup-final-ahmedabad-tickets-11-19-2023/event/151976362/",
+            "source": ".sjBi9c.sjBi9c::after{content:none}.qwJzfb{flex-shrink:0}.BYbUcd{overflow:hidden;}.BYbUcd img{height:100%;width:100%}Ticketek.com.au",
+            "link": "https://premier.ticketek.com.au/shows/show.aspx?sh=DEVO23",
             "link_type": "tickets"
         },
         {
-            "source": "International Cricket Council",
-            "link": "https://www.cricketworldcup.com/match/102738",
+            "source": "Darling Harbour",
+            "link": "https://www.darlingharbour.com/whats-on/events/devo",
             "link_type": "more info"
         },
         {
-            "source": "BookMyShow",
-            "link": "https://in.bookmyshow.com/sports/ahmedabad-icc-mens-cwc-2023/ET00367204",
+            "source": "Cityguide",
+            "link": "https://cityguide.com.au/sydney/e/devo",
             "link_type": "more info"
         },
         {
-            "source": "NDTV Sports",
-            "link": "https://sports.ndtv.com/cricket/grounds/2050-sardar-patel-stadium-motera-ahmedabad-groundprofile/schedules-fixtures",
+            "source": "Whatslively",
+            "link": "https://whatslively.com/events/5d5a773f0a0c1e16d16ca4c44a4f85d5bea1933d",
             "link_type": "more info"
         },
         {
-            "source": "Firstpost",
-            "link": "https://www.firstpost.com/firstcricket/cricket-live-score/tbc-vs-tbc-odi-live-cricket-score-quick/5612/228846.html",
+            "source": "Bandsintown",
+            "link": "https://www.bandsintown.com/e/104905267-devo-at-darling-harbour-theatre?came_from=38&utm_medium=web&utm_source=artist_page&utm_campaign=ticket_rsvp",
             "link_type": "more info"
         }
     ],
     "venue": {
-        "name": "Narendra Modi Stadium",
-        "reviews": 20324,
-        "link": "https://www.google.com/search?sca_esv=583261567&hl=en&gl=us&q=Narendra+Modi+Stadium&ludocid=12364473804001350445&ibp=gwp%3B0,7"
+        "name": "ICC Sydney",
+        "reviews": 5105,
+        "link": "https://www.google.com/search?sca_esv=583292559&q=ICC+Sydney&ludocid=117030301314467241&ibp=gwp%3B0,7"
     },
-    "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLesc0nf13-3HfmczXzd8s8eiydZGOTDSlJunIljg&s"
+    "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqLCsVuxFrdD1o4wEig5g1Mzcxbya4C3qeO1_bn9Y4fMNIqPPf4P9aSkM&s",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSg9wZw56tIdcUeKfi4wJAm_p9bySMatLiUOxhW2cclFQ&s=10"
 }

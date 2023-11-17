@@ -1,42 +1,31 @@
 {
-    "title": "ICC Annual Conference",
+    "title": "ICC, NELSON KANZELA & MAS",
     "date": {
-        "start_date": "Nov 28",
-        "when": "Tue, Nov 28, 1 PM – Thu, Nov 30, 12 PM"
+        "start_date": "Nov 18",
+        "when": "Sat, Nov 18, 8 PM CST"
     },
     "address": [
-        "Sheraton Indianapolis Hotel at Keystone Crossing, 8787 Keystone Crossing",
-        "Indianapolis, IN"
+        "Los Globos, 3059 S Central Park Ave",
+        "Chicago, IL"
     ],
-    "link": "https://www.ksmcpa.com/events/indiana-county-commissioners-2023-annual-conference/",
+    "link": "https://www.stubhub.com/nelson-kanzela-chicago-tickets-11-18-2023/event/152586228/",
     "event_location_map": {
-        "image": "https://www.google.com/maps/vt/data=jRJzBx2rWCO60VxbOhmDRZe1Ul3QjpmBoT0Jc-57MgM4laQBsU5sjkogGiVCtDb04Lew7WBMd-DYAwvfaP7jKAxKdM1iw9EcS2H-HF-ud4FxmC0XCN4",
-        "link": "https://www.google.com/maps/place//data=!4m2!3m1!1s0x886b52b35f468089:0x480551bc624f5b79?sa=X&ved=2ahUKEwjC3tbYvsqCAxUtF1kFHenSAg4Q9eIBegQIGBAA&hl=en&gl=us",
-        "serpapi_link": "https://serpapi.com/search.json?data=%214m2%213m1%211s0x886b52b35f468089%3A0x480551bc624f5b79&engine=google_maps&google_domain=google.com&hl=en&q=ICC&type=place"
+        "image": "https://www.google.com/maps/vt/data=B1J2nmyWIZMOaWUB1q0jcD9QuAb4WSXZcWi6y7k7k5qXPBzrt9UoSMBYYsj_9ntB-spvR8RympIKEl86-7G2ZirZ6WJB-gDAkxQP6AteZ4A9KOxrA9c",
+        "link": "https://www.google.com/maps/place//data=!4m2!3m1!1s0x880e3214d26c5ee5:0x8390a748b54a3016?sa=X&ved=2ahUKEwjKmreP3sqCAxVfkmoFHWPWA3sQ9eIBegQIGRAA",
+        "serpapi_link": "https://serpapi.com/search.json?data=%214m2%213m1%211s0x880e3214d26c5ee5%3A0x8390a748b54a3016&engine=google_maps&google_domain=google.com&hl=en&q=ICC&type=place"
     },
-    "description": "Join us at the Indiana County Commissioners 2023 Annual Conference in Indianapolis Nov. 28-30 to hear a compelling panel discussion, “Data-Driven Success: Bridging the Talent Gap Through Workforce...",
     "ticket_info": [
         {
-            "source": "indianacountycommissioners",
-            "link": "https://www.indianacountycommissioners.com/index.php?option=com_jevents&task=icalrepeat.detail&evid=330&Itemid=97&year=2023&month=11&day=28&title=icc-annual-conference&uid=093edb29739010354be8bbde33003b3d",
-            "link_type": "more info"
-        },
-        {
-            "source": "Katz, Sapper & Miller",
-            "link": "https://www.ksmcpa.com/events/indiana-county-commissioners-2023-annual-conference/",
-            "link_type": "more info"
-        },
-        {
-            "source": "10Times",
-            "link": "https://10times.com/e1r4-f8s3-g5gf",
+            "source": "StubHub",
+            "link": "https://www.stubhub.com/nelson-kanzela-chicago-tickets-11-18-2023/event/152586228/",
             "link_type": "more info"
         }
     ],
     "venue": {
-        "name": "Sheraton Indianapolis Hotel at Keystone Crossing",
-        "reviews": 2289,
-        "link": "https://www.google.com/search?sca_esv=583261567&hl=en&gl=us&q=Sheraton+Indianapolis+Hotel+at+Keystone+Crossing&ludocid=5189644015159434105&ibp=gwp%3B0,7"
+        "name": "Los Globos",
+        "reviews": 128,
+        "link": "https://www.google.com/search?sca_esv=583292559&q=Los+Globos&ludocid=9480261146335916054&ibp=gwp%3B0,7"
     },
-    "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBLjw-9VLadMg1GuQmB6q-rPPlCz0zvCo7LblGkPCB8pLyrH0I6FgDGOk&s",
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZz93TM87GurgqqO6TAHixFAvOU--nyqlR5cJDnlkDY1D8u0YOGEMQ2GEhED0&s=10"
+    "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLfhFjSGtECCfgL2mawJuKDhu6lrZWlZ-Co8ikR-vr876UV6QYb11mEA4&s",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgKTAyExc7jtmawboK_9w8NpH1A1gs3_dEg1eP4HXLIQ&s=10"
 }

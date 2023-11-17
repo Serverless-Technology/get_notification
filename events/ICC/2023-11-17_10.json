@@ -1,26 +1,37 @@
 {
-    "title": "International Conference on Cardiology and...",
+    "title": "International Coronary Congress",
     "date": {
-        "start_date": "Nov 18",
-        "when": "Sat, Nov 18, 4:23 PM – Sun, Nov 19, 4:23 PM"
+        "start_date": "Nov 30",
+        "when": "Thu, Nov 30, 7 PM – Sat, Dec 2, 7 PM"
     },
     "address": [
-        "Paris",
-        "Paris, France"
+        "New York Marriott Marquis, 1535 Broadway",
+        "New York, NY"
     ],
-    "link": "https://www.eworldtrade.com/events/international-conference-on-cardiology-and-cardiovascular-medicine-icc-on-november-18-19-2023-in-paris-france/",
+    "link": "https://10times.com/icc-h",
     "event_location_map": {
-        "image": "https://www.google.com/maps/vt/data=eZ3vTGH_CLF9n_j2V5Vt_yfAmYm24GwDZVYdTcIYfaDN1M2zb82gZpBdPypUPvgJBnkokRBPGw",
-        "link": "https://www.google.com/maps/place//data=!4m2!3m1!1s0x47e66e1f06e2b70f:0x40b82c3688c9460?sa=X&ved=2ahUKEwjC3tbYvsqCAxUtF1kFHenSAg4Q9eIBegQIRxAA&hl=en&gl=us",
-        "serpapi_link": "https://serpapi.com/search.json?data=%214m2%213m1%211s0x47e66e1f06e2b70f%3A0x40b82c3688c9460&engine=google_maps&google_domain=google.com&hl=en&q=ICC&type=place"
+        "image": "https://www.google.com/maps/vt/data=H7ocMNEA8-GGewRxgxLDj3zOoWseMceqXzUdpNg9JrB3gnQez6LJ8K2PN524v1m1f0mQ1991YBMwokOtRUV0_SCSmiVG8OX-LP35t-wB_OHf1DWKb98",
+        "link": "https://www.google.com/maps/place//data=!4m2!3m1!1s0x89c2585500e85589:0x18f39d1f8ee2a312?sa=X&ved=2ahUKEwjKmreP3sqCAxVfkmoFHWPWA3sQ9eIBegQISRAA",
+        "serpapi_link": "https://serpapi.com/search.json?data=%214m2%213m1%211s0x89c2585500e85589%3A0x18f39d1f8ee2a312&engine=google_maps&google_domain=google.com&hl=en&q=ICC&type=place"
     },
-    "description": "International Conference on Cardiology and Cardiovascular Medicine ICC on November 18-19, 2023 in Paris, France 2023 happens in Paris, Nov, 2023 focus on . The cycle of the trade fair is ...",
+    "description": "A program will explore and encourage best practices in surgical coronary revascularization. Renowned speakers will present cutting-edge techniques and technologies for treating patients with...",
     "ticket_info": [
         {
-            "source": "eWorldTrade",
-            "link": "https://www.eworldtrade.com/events/international-conference-on-cardiology-and-cardiovascular-medicine-icc-on-november-18-19-2023-in-paris-france/",
+            "source": "Arthrex",
+            "link": "https://www.arthrex.com/en/calendar/events/57044",
+            "link_type": "more info"
+        },
+        {
+            "source": "10Times",
+            "link": "https://10times.com/icc-h",
             "link_type": "more info"
         }
     ],
-    "thumbnail": "https://www.google.com/maps/vt/data=eZ3vTGH_CLF9n_j2V5Vt_yfAmYm24GwDZVYdTcIYfaDN1M2zb82gZpBdPypUPvgJBnkokRBPGw"
+    "venue": {
+        "name": "New York Marriott Marquis",
+        "reviews": 13401,
+        "link": "https://www.google.com/search?sca_esv=583292559&q=New+York+Marriott+Marquis&ludocid=1797953435117724434&ibp=gwp%3B0,7"
+    },
+    "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSvOM8_k7FGb6J02QBd7-ZdcP08QMoMYJNrduZ0RwPtGpuXlRS-kFQiSI&s",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxRDkkvWfMgaAiUcbWWoHzdTVyE_k6g4SD-3hsLtkOrbIN2OQ2MA3lvSj1h04&s=10"
 }

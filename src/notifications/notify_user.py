@@ -80,6 +80,14 @@ def notify(event, context):
     # receiver = list(RECEIVER_MAIL)
     sender = SENDER_MAIL
     subject = MAIL_SUBJECT
+    print(event)
+    bucket_name = event["Records"]["s3"]["bucket"]["name"]
+    file_name = event["Records"]["s3"]["object"]["key"]
+    response = {
+        "body": event,
+        "status": 200
+    }
+    return response
     # response = send_mail(sender, subject, event, receiver)
     # if response.status_code == 200:
     #     print("Email sent successfully!")

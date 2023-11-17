@@ -5,7 +5,12 @@ from datetime import date
 from serpapi import GoogleSearch
 # from config import SRC_PATH, DEST_PATH
 from src.storage.upload_model import get_storage_instance, upload_event
+from dotenv import load_dotenv
 
+load_dotenv()
+
+SRC_PATH = os.environ.get("SRC_PATH")
+DEST_PATH = os.environ.get("DEST_PATH")
 
 def upload_to_bucket(count, event, tag, user_email):
     storage = get_storage_instance(path=f"{DEST_PATH}")

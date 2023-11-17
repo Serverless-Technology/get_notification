@@ -1,5 +1,5 @@
 import requests
-from utils.tags import TAGS
+from frontend.utils.tags import TAGS
 from flask import (
     Flask,
     render_template,
@@ -10,8 +10,8 @@ from flask import (
     flash,
 )
 import json
-from utils.helper import generate_uuid
-from utils.helper import generate_uuid
+from frontend.utils.helper import generate_uuid
+from frontend.utils.helper import generate_uuid
 import os
 from flask_sse import sse
 from flask import Flask, session
@@ -43,6 +43,7 @@ def login():
         response = requests.request("GET", url, headers=headers, data=payload)
 
         users = response.json()
+        print(users)
         user_details = request.form
         user_email = user_details["email"]
         for user in users:
@@ -117,12 +118,12 @@ def index():
             flash("The relevant tag information has been stored to our database")
             user_email = session["email"]
             sender = SENDER_MAIL
-            try:
-                send_mail(sender, "Test Mail", [user_email])
-                flash(f"Email sent successfully! to {user_email}")
-            except Exception as e:
-                flash("Error sending email: {response.status_code} - {response.text}")
-                print(e)
+            # try:
+            #     send_mail(sender, "Test Mail", [user_email])
+            #     flash(f"Email sent successfully! to {user_email}")
+            # except Exception as e:
+            #     flash("Error sending email: {response.status_code} - {response.text}")
+            #     print(e)
             return redirect(url_for("index"))
 
     return render_template("index.html", taglist=TAGS)

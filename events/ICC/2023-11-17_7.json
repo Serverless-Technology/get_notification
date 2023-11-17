@@ -1,32 +1,46 @@
 {
-    "title": "General Studies Visit Day",
+    "title": "Cricket World Cup 2023 - Final Tickets",
     "date": {
-        "start_date": "Nov 17",
-        "when": "Fri, Nov 17, 9 AM – 12 PM"
+        "start_date": "Nov 18",
+        "when": "Sat, Nov 18, 7:00 PM – Sun, Nov 19, 6:30 PM GMT+5:30"
     },
     "address": [
-        "Illinois Central College - East Peoria Campus, 1 College Dr",
-        "East Peoria, IL"
+        "Narendra Modi Stadium, Stadium Rd, Parvati Nagar, Motera",
+        "Ahmedabad, Gujarat, India"
     ],
-    "link": "https://icc.edu/event/fall-campus-visit-day-5/",
-    "event_location_map": {
-        "image": "https://www.google.com/maps/vt/data=CmVtZIkUsEwLqaK24TV-2MBjkcptQioe4ejRjivIr0xyYhc266Io_5Z1wjmW0IShfnG0cJXbtvTjcPhSIU-M6equFFArSA4u9QY1xMkMmnnpD53QynA",
-        "link": "https://www.google.com/maps/place//data=!4m2!3m1!1s0x880a572ebac62c9d:0x47bc4b88b256a498?sa=X&ved=2ahUKEwjC3tbYvsqCAxUtF1kFHenSAg4Q9eIBegQIMBAA&hl=en&gl=us",
-        "serpapi_link": "https://serpapi.com/search.json?data=%214m2%213m1%211s0x880a572ebac62c9d%3A0x47bc4b88b256a498&engine=google_maps&google_domain=google.com&hl=en&q=ICC&type=place"
-    },
-    "description": "Come to campus to learn more about ICC! You’ll hear from students and faculty, tour campus, learn more about student life, steps to register, and campus housing. With increased MAP... Read more »",
+    "link": "https://in.bookmyshow.com/sports/ahmedabad-icc-mens-cwc-2023/ET00367204",
+    "description": "Narendra Modi Stadium is one of the Premier cricket stadiums of India located in Motera, Ahmedabad. Built on the banks of the Sabarmati River in the outskirts of Ahmedabad, the stadium was...",
     "ticket_info": [
         {
-            "source": "Illinois Central College",
-            "link": "https://icc.edu/event/fall-campus-visit-day-5/",
+            "source": "Stubhub.com",
+            "link": "https://www.stubhub.com/cricket-world-cup-final-ahmedabad-tickets-11-19-2023/event/151976362/",
+            "link_type": "tickets"
+        },
+        {
+            "source": "International Cricket Council",
+            "link": "https://www.cricketworldcup.com/match/102738",
+            "link_type": "more info"
+        },
+        {
+            "source": "BookMyShow",
+            "link": "https://in.bookmyshow.com/sports/ahmedabad-icc-mens-cwc-2023/ET00367204",
+            "link_type": "more info"
+        },
+        {
+            "source": "NDTV Sports",
+            "link": "https://sports.ndtv.com/cricket/grounds/2050-sardar-patel-stadium-motera-ahmedabad-groundprofile/schedules-fixtures",
+            "link_type": "more info"
+        },
+        {
+            "source": "Firstpost",
+            "link": "https://www.firstpost.com/firstcricket/cricket-live-score/tbc-vs-tbc-odi-live-cricket-score-quick/5612/228846.html",
             "link_type": "more info"
         }
     ],
     "venue": {
-        "name": "Illinois Central College - East Peoria Campus",
-        "reviews": 84,
-        "link": "https://www.google.com/search?sca_esv=583261567&hl=en&gl=us&q=Illinois+Central+College+-+East+Peoria+Campus&ludocid=5169089522794144920&ibp=gwp%3B0,7"
+        "name": "Narendra Modi Stadium",
+        "reviews": 20331,
+        "link": "https://www.google.com/search?sca_esv=583292559&q=Narendra+Modi+Stadium&ludocid=12364473804001350445&ibp=gwp%3B0,7"
     },
-    "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMdYJjoghjqJ-Bwg3KOf4cedCYelDVFaXVRjKAhswvUhHkZSsjl48Ydbc&s",
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWby9mNDJX7IyHqkkCCZr_HBXHWvr1YbVRDsfUJgWY9g&s=10"
+    "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLesc0nf13-3HfmczXzd8s8eiydZGOTDSlJunIljg&s"
 }

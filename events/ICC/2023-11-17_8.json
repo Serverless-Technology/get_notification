@@ -1,52 +1,27 @@
 {
-    "title": "The Giggling Goat – Festival of Comedy",
+    "title": "ICC Tournament (Wrestling)",
     "date": {
-        "start_date": "Nov 18",
-        "when": "Sat, Nov 18"
+        "start_date": "Dec 1",
+        "when": "Fri, Dec 1 – Sat, Dec 2"
     },
     "address": [
-        "International Convention Centre Wales, The Coldra, Catsash Rd, Caerleon",
-        "Newport, United Kingdom"
+        "603 Industrial Dr",
+        "Mt Union, PA"
     ],
-    "link": "https://www.iccwales.com/whats-on/the-giggling-goat-festival-of-comedy/",
+    "link": "https://www.muasd.org/event/icc-tournament-wrestling/",
     "event_location_map": {
-        "image": "https://www.google.com/maps/vt/data=cFjPVlqnRzMbnW-7Mhu50Z-aAzvoPQRZXn7cDUGpxQs1JptwCmxwll7U1RF48O4bus4venFMFwLDn5JXdm5zNwU0VlRyzz4ZlLuSbXi-iF4KiGAdv_I",
-        "link": "https://www.google.com/maps/place//data=!4m2!3m1!1s0x4871e634f777d02d:0x7674cde20b827f70?sa=X&ved=2ahUKEwjC3tbYvsqCAxUtF1kFHenSAg4Q9eIBegQIOBAA&hl=en&gl=us",
-        "serpapi_link": "https://serpapi.com/search.json?data=%214m2%213m1%211s0x4871e634f777d02d%3A0x7674cde20b827f70&engine=google_maps&google_domain=google.com&hl=en&q=ICC&type=place"
+        "image": "https://www.google.com/maps/vt/data=axsVO1U07249_CzMtqYwVSGAKTlFGHHUakJRnQvDAf3vbvSduaMbLGsrRz_07pc5UTskvG6mFTkBqnIiy1RZ99mgwG_7XyAJfT54Pglp-HnlayqepyM",
+        "link": "https://www.google.com/maps/place//data=!4m2!3m1!1s0x89c95eda3e41c30b:0x12188f524dc7877b?sa=X&ved=2ahUKEwjKmreP3sqCAxVfkmoFHWPWA3sQ9eIBegQIORAA",
+        "serpapi_link": "https://serpapi.com/search.json?data=%214m2%213m1%211s0x89c95eda3e41c30b%3A0x12188f524dc7877b&engine=google_maps&google_domain=google.com&hl=en&q=ICC&type=place"
     },
-    "description": "The Giggling Goat presents The Festival of Comedy. Coming to the ICC Wales on 18th November with a hilarious line up including Omid Djalili, Seann Walsh & LOADS MORE! Tickets are on sale now!",
+    "description": "(Away) Varsity December 1st and 2nd 2023",
     "ticket_info": [
         {
-            "source": "Skiddle.com",
-            "link": "https://www.skiddle.com/whats-on/Newport/ICC-Wales/Festival-Of-Comedy-Newport---Winter-Series/36655157/",
-            "link_type": "tickets"
-        },
-        {
-            "source": "ICC Wales",
-            "link": "https://www.iccwales.com/whats-on/the-giggling-goat-festival-of-comedy/",
-            "link_type": "more info"
-        },
-        {
-            "source": "The List",
-            "link": "https://list.co.uk/whats-on/85686/festival-of-comedy-newport-winter-series",
-            "link_type": "more info"
-        },
-        {
-            "source": "InYourArea",
-            "link": "https://www.inyourarea.co.uk/thingstodo/NP18%201HQ/comedy/Festival%20Of%20Comedy%20Newport%20-%20Winter%20Series/64fd2c44351f38001a4fe829",
-            "link_type": "more info"
-        },
-        {
-            "source": "Data Thistle",
-            "link": "https://www.datathistle.com/event/2218555-festival-of-comedy-newport-winter-series/",
+            "source": "Mount Union Area School District",
+            "link": "https://www.muasd.org/event/icc-tournament-wrestling/",
             "link_type": "more info"
         }
     ],
-    "venue": {
-        "name": "International Convention Centre Wales",
-        "reviews": 730,
-        "link": "https://www.google.com/search?sca_esv=583261567&hl=en&gl=us&q=International+Convention+Centre+Wales&ludocid=8535673564513337200&ibp=gwp%3B0,7"
-    },
-    "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQqRfXZYZ_bKSZz8vvJffmQQOiuj9aR4vZTINuELs&s",
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKtvjyXnI2umsbq7QN9y5j5jmIgKNmTT_Ql3eley48fw&s"
+    "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTP-r2Qm8BeQWTln4Msh0i7PjYzVVf27C9vhC9pMsFuk5-8tifUyEDF0Sk&s",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStLHZfyTgQCrPC3h_VgipvtY1B42rKaaDK3rvmljeyAEGDN0AkTXOhw0sybw&s=10"
 }
