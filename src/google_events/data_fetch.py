@@ -5,6 +5,7 @@ from serpapi import GoogleSearch
 from config import SRC_PATH, DEST_PATH
 from src.storage.upload_model import get_storage_instance, upload_event
 
+
 def save_file(count, event, dir_path):
     count = count + 1
     file_name = f"{dir_path}/{count}"
@@ -14,21 +15,21 @@ def save_file(count, event, dir_path):
     return
 
 
-def upload_to_bucket(count, event, tag):
+def upload_to_bucket(count, event, tag, user_email):
     storage = get_storage_instance(path=f"{DEST_PATH}")
     count = count + 1
     file_name = f"./events/{tag}/{count}"
     with open(f"{file_name}.json", "w", encoding="utf-8") as json_file:
         json.dump(event, json_file, ensure_ascii=False, indent=4)
 
-    dst_path = f"{DEST_PATH}/{tag}/{count}.json"
+    dst_path = f"{DEST_PATH}/{user_email}/{tag}/{count}.json"
     src_path = f"{SRC_PATH}/{tag}/{count}.json"
     upload_event(storage, src_path, dst_path, max_attempts=3)
     print(f"Removing file {file_name}.json from local Events directory")
     os.remove(f"{file_name}.json")
 
 
-def fetch_google_data(tag):
+def fetch_google_data(tag, user_email):
     DIR_PATH = f"./events/{tag}"
     params = {
         "engine": "google_events",
@@ -58,5 +59,5 @@ def fetch_google_data(tag):
 
     for count, event in enumerate(events_results):
         save_file(count, event, DIR_PATH)
-        upload_to_bucket(count, event, tag)
+        upload_to_bucket(count, event, tag, user_email)
     os.rmdir(DIR_PATH)

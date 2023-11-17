@@ -1,5 +1,5 @@
 import requests
-from frontend.src.tags import TAGS
+from utils.tags import TAGS
 from flask import (
     Flask,
     render_template,
@@ -10,8 +10,8 @@ from flask import (
     flash,
 )
 import json
-from frontend.src.helper import generate_uuid
-from frontend.src.helper import generate_uuid
+from utils.helper import generate_uuid
+from utils.helper import generate_uuid
 import os
 from flask_sse import sse
 from flask import Flask, session
@@ -20,8 +20,13 @@ from src.notifications.notify_user import send_mail
 
 SENDER_MAIL = os.environ.get("SENDER_MAIL")
 
+CREATE_USER_URL = os.getenv("CREATE_USER_URL")
+GET_USERS = os.getenv("GET_USERS")
 
-app = Flask(__name__, template_folder="./templates", static_folder="./static")
+
+app = Flask(
+    __name__, template_folder="./frontend/templates", static_folder="./frontend/static"
+)
 
 app.config.update(SECRET_KEY=os.urandom(24))
 
@@ -32,7 +37,7 @@ app.register_blueprint(sse, url_prefix="/stream")
 @app.route("/", methods=["GET", "POST"])
 def login():
     if request.method == "POST":
-        url = "https://202q8mozdg.execute-api.us-east-1.amazonaws.com/dev/users"
+        url = GET_USERS
         payload = {}
         headers = {}
         response = requests.request("GET", url, headers=headers, data=payload)
@@ -53,7 +58,7 @@ def login():
 
 @app.route("/register", methods=["GET", "POST"])
 def register():
-    url = "https://202q8mozdg.execute-api.us-east-1.amazonaws.com/dev/users"
+    url = CREATE_USER_URL
     if request.method == "POST":
         user_details = request.form
         first_name = user_details["first-name"]
@@ -107,13 +112,14 @@ def index():
         except:
             tag_name = "0"
         if tag_name != "0":
-            fetch_google_data(tag_name)
+            user_email = session["email"]
+            fetch_google_data(tag_name, user_email)
             flash("The relevant tag information has been stored to our database")
             user_email = session["email"]
             sender = SENDER_MAIL
             try:
                 send_mail(sender, "Test Mail", "This is Test", [user_email])
-                flash("Email sent successfully!")
+                flash(f"Email sent successfully! to {user_email}")
             except Exception as e:
                 flash("Error sending email: {response.status_code} - {response.text}")
                 print(e)
