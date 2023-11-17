@@ -1,5 +1,5 @@
 import requests
-from utils.tags import TAGS
+from frontend.utils.tags import TAGS
 from flask import (
     Flask,
     render_template,
@@ -10,8 +10,8 @@ from flask import (
     flash,
 )
 import json
-from utils.helper import generate_uuid
-from utils.helper import generate_uuid
+from frontend.utils.helper import generate_uuid
+from frontend.utils.helper import generate_uuid
 import os
 from flask_sse import sse
 from flask import Flask, session
