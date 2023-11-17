@@ -150,3 +150,5 @@ __pycache__/
 experiment.ipynb
 test.txt
 get_notification/node_modules
+.serverless/
+node_modules/

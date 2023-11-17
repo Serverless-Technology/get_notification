@@ -11,7 +11,7 @@
 #
 # Happy Coding!
 
-service: notification-service
+service: serverless-notify
 # app and org for use with dashboard.serverless.com
 app: notification-service
 org: mannjain
@@ -100,14 +100,14 @@ functions:
           path: users/{id}
           method: delete
 
-  notifyUser:
-    handler: src.notifications.notify_user.notify
-    events:
-      - s3:
-          bucket: data-fetch-bucket
-          event: s3:ObjectCreated:*
-          existing: true
-          forceDeploy: true
+  # notifyUser:
+  #   handler: src.notifications.notify_user.notify
+  #   events:
+  #     - s3:
+  #         bucket: data-fetch-bucket
+  #         event: s3:ObjectCreated:*
+  #         existing: true
+  #         forceDeploy: true
 #    The following are a few example events you can configure
 #    NOTE: Please make sure to change your handler code to work with those events
 #    Check the event documentation for details
@@ -179,6 +179,12 @@ resources:
           ReadCapacityUnits: 1
           WriteCapacityUnits: 1
 
+# plugins:
+#   - serverless-python-requirements
+  # - serverless-s3-sync
 
-plugins:
-  - serverless-python-requirements
+# custom:
+#   s3Sync:
+#     - bucketName: data-fetch-bucket
+#       localDir: ./src/google_events/events
+

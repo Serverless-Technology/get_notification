@@ -1,0 +1,35 @@
+{
+    "title": "ICC Tournament",
+    "date": {
+        "start_date": "Dec 1",
+        "when": "Fri, Dec 1, 4 PM"
+    },
+    "address": [
+        "Claysburg-Kimmel School District, 531 Bedford St",
+        "Claysburg, PA"
+    ],
+    "link": "https://ckathletics.org/main/event/eventid/75374331",
+    "event_location_map": {
+        "image": "https://www.google.com/maps/vt/data=VBcZbPNr2aQWe_kPyAfilMMr91mvs1Cx4GvkUki9qRIHcfsG_5NMmp8TlIZ4o4Tc7qvjOtHIPj30Sd1PWcXXKAVILHE7-iAH_hOPYiCokECwIn_k-_s",
+        "link": "https://www.google.com/maps/place//data=!4m2!3m1!1s0x89cbbc994a52e5d7:0x42c9a86289bab1c4?sa=X&ved=2ahUKEwjC3tbYvsqCAxUtF1kFHenSAg4Q9eIBegQIKBAA&hl=en&gl=us",
+        "serpapi_link": "https://serpapi.com/search.json?data=%214m2%213m1%211s0x89cbbc994a52e5d7%3A0x42c9a86289bab1c4&engine=google_maps&google_domain=google.com&hl=en&q=ICC&type=place"
+    },
+    "ticket_info": [
+        {
+            "source": "Claysburg-Kimmel High School",
+            "link": "https://ckathletics.org/main/event/eventid/75374331",
+            "link_type": "more info"
+        },
+        {
+            "source": "Tussey Mountain High School Event Details",
+            "link": "https://tmsdtitans.com/main/event/scid/PA166783614/eventId/76515703/id/3624150/seasonid/4785505/",
+            "link_type": "more info"
+        }
+    ],
+    "venue": {
+        "name": "Claysburg-Kimmel School District",
+        "reviews": 12,
+        "link": "https://www.google.com/search?sca_esv=583261567&hl=en&gl=us&q=Claysburg-Kimmel+School+District&ludocid=4812562817993060804&ibp=gwp%3B0,7"
+    },
+    "thumbnail": "https://www.google.com/maps/vt/data=VBcZbPNr2aQWe_kPyAfilMMr91mvs1Cx4GvkUki9qRIHcfsG_5NMmp8TlIZ4o4Tc7qvjOtHIPj30Sd1PWcXXKAVILHE7-iAH_hOPYiCokECwIn_k-_s"
+}
