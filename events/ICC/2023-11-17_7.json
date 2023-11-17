@@ -1,0 +1,32 @@
+{
+    "title": "General Studies Visit Day",
+    "date": {
+        "start_date": "Nov 17",
+        "when": "Fri, Nov 17, 9 AM – 12 PM"
+    },
+    "address": [
+        "Illinois Central College - East Peoria Campus, 1 College Dr",
+        "East Peoria, IL"
+    ],
+    "link": "https://icc.edu/event/fall-campus-visit-day-5/",
+    "event_location_map": {
+        "image": "https://www.google.com/maps/vt/data=CmVtZIkUsEwLqaK24TV-2MBjkcptQioe4ejRjivIr0xyYhc266Io_5Z1wjmW0IShfnG0cJXbtvTjcPhSIU-M6equFFArSA4u9QY1xMkMmnnpD53QynA",
+        "link": "https://www.google.com/maps/place//data=!4m2!3m1!1s0x880a572ebac62c9d:0x47bc4b88b256a498?sa=X&ved=2ahUKEwjC3tbYvsqCAxUtF1kFHenSAg4Q9eIBegQIMBAA&hl=en&gl=us",
+        "serpapi_link": "https://serpapi.com/search.json?data=%214m2%213m1%211s0x880a572ebac62c9d%3A0x47bc4b88b256a498&engine=google_maps&google_domain=google.com&hl=en&q=ICC&type=place"
+    },
+    "description": "Come to campus to learn more about ICC! You’ll hear from students and faculty, tour campus, learn more about student life, steps to register, and campus housing. With increased MAP... Read more »",
+    "ticket_info": [
+        {
+            "source": "Illinois Central College",
+            "link": "https://icc.edu/event/fall-campus-visit-day-5/",
+            "link_type": "more info"
+        }
+    ],
+    "venue": {
+        "name": "Illinois Central College - East Peoria Campus",
+        "reviews": 84,
+        "link": "https://www.google.com/search?sca_esv=583261567&hl=en&gl=us&q=Illinois+Central+College+-+East+Peoria+Campus&ludocid=5169089522794144920&ibp=gwp%3B0,7"
+    },
+    "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMdYJjoghjqJ-Bwg3KOf4cedCYelDVFaXVRjKAhswvUhHkZSsjl48Ydbc&s",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWby9mNDJX7IyHqkkCCZr_HBXHWvr1YbVRDsfUJgWY9g&s=10"
+}

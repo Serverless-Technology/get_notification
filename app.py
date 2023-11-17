@@ -118,7 +118,7 @@ def index():
             user_email = session["email"]
             sender = SENDER_MAIL
             try:
-                send_mail(sender, "Test Mail", "This is Test", [user_email])
+                send_mail(sender, "Test Mail", [user_email])
                 flash(f"Email sent successfully! to {user_email}")
             except Exception as e:
                 flash("Error sending email: {response.status_code} - {response.text}")

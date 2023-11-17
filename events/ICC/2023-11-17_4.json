@@ -1,0 +1,42 @@
+{
+    "title": "ICC Annual Conference",
+    "date": {
+        "start_date": "Nov 28",
+        "when": "Tue, Nov 28, 1 PM – Thu, Nov 30, 12 PM"
+    },
+    "address": [
+        "Sheraton Indianapolis Hotel at Keystone Crossing, 8787 Keystone Crossing",
+        "Indianapolis, IN"
+    ],
+    "link": "https://www.ksmcpa.com/events/indiana-county-commissioners-2023-annual-conference/",
+    "event_location_map": {
+        "image": "https://www.google.com/maps/vt/data=jRJzBx2rWCO60VxbOhmDRZe1Ul3QjpmBoT0Jc-57MgM4laQBsU5sjkogGiVCtDb04Lew7WBMd-DYAwvfaP7jKAxKdM1iw9EcS2H-HF-ud4FxmC0XCN4",
+        "link": "https://www.google.com/maps/place//data=!4m2!3m1!1s0x886b52b35f468089:0x480551bc624f5b79?sa=X&ved=2ahUKEwjC3tbYvsqCAxUtF1kFHenSAg4Q9eIBegQIGBAA&hl=en&gl=us",
+        "serpapi_link": "https://serpapi.com/search.json?data=%214m2%213m1%211s0x886b52b35f468089%3A0x480551bc624f5b79&engine=google_maps&google_domain=google.com&hl=en&q=ICC&type=place"
+    },
+    "description": "Join us at the Indiana County Commissioners 2023 Annual Conference in Indianapolis Nov. 28-30 to hear a compelling panel discussion, “Data-Driven Success: Bridging the Talent Gap Through Workforce...",
+    "ticket_info": [
+        {
+            "source": "indianacountycommissioners",
+            "link": "https://www.indianacountycommissioners.com/index.php?option=com_jevents&task=icalrepeat.detail&evid=330&Itemid=97&year=2023&month=11&day=28&title=icc-annual-conference&uid=093edb29739010354be8bbde33003b3d",
+            "link_type": "more info"
+        },
+        {
+            "source": "Katz, Sapper & Miller",
+            "link": "https://www.ksmcpa.com/events/indiana-county-commissioners-2023-annual-conference/",
+            "link_type": "more info"
+        },
+        {
+            "source": "10Times",
+            "link": "https://10times.com/e1r4-f8s3-g5gf",
+            "link_type": "more info"
+        }
+    ],
+    "venue": {
+        "name": "Sheraton Indianapolis Hotel at Keystone Crossing",
+        "reviews": 2289,
+        "link": "https://www.google.com/search?sca_esv=583261567&hl=en&gl=us&q=Sheraton+Indianapolis+Hotel+at+Keystone+Crossing&ludocid=5189644015159434105&ibp=gwp%3B0,7"
+    },
+    "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBLjw-9VLadMg1GuQmB6q-rPPlCz0zvCo7LblGkPCB8pLyrH0I6FgDGOk&s",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZz93TM87GurgqqO6TAHixFAvOU--nyqlR5cJDnlkDY1D8u0YOGEMQ2GEhED0&s=10"
+}
