@@ -1,4 +1,11 @@
 TAGS = [
     "AI-ML Hackathon",
-    "ICC Matches"
+    "Job/Intern",
+    "Technology News",
+    "Share Prices",
+    "ICC Matches",
+    "Politics",
+    "Sports",
+    "Course Updates",
+    "Fest"
 ]
