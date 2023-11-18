@@ -84,19 +84,33 @@ html{
     margin-bottom: 5%;
     align-self: center;
 }
+
 .form{
     display: flex;
-    flex-direction: column;
-    align-items:flex-start;
+    padding: 5px;
     justify-content: center;
 }
-/*.search{
+
+.form.active {
+    display: flex;
+    flex-wrap: wrap;
+    transform: scale(1);
+    opacity: 1;
+    flex-direction: column;
+    gap: 10px;
+    animation: show 1s;
+}
+
+/*.search
+{
 width: 500px;
 display: flex;
 }*/
 
+/*
+
 .search-box{
-    /*top:10%;*/
+    top:10%;
     margin-left: 180%;
     width: 300%;
     margin-bottom: 3%;
@@ -140,7 +154,7 @@ display: flex;
 	transition: all 5s ease-in-out;
     width: 30%;
 }
-
+*/
 /*Profile dropdown*/
 
 .profile
@@ -193,6 +207,132 @@ display: flex;
 
 .profile_.dropdown .profile {
     background-color: #000;
+}
+
+/* 
+.btn {
+    padding: 15px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    transition: all ease 0.3s;
+}
+
+.btn-login {
+    background-color: #4054D2;
+    color: #ffffff;
+    border-radius: 9px;
+}
+
+.btn-login:hover {
+    background-color: #0B1CD5;
+}
+
+
+.email_add {
+    border: 1px solid whitesmoke;
+    padding: 0 5px;
+    border-radius: 10px;
+    display: flex;
+    align-content: flex-start;
+    justify-content: space-between;
+    justify-items: baseline;
+    align-items: baseline;
+    margin-bottom: 10px;
+    position: relative;
+} */
+
+
+
+  .form {
+    max-width: 400px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  
+  .email_add {
+    margin-bottom: 20px;
+  }
+  
+  .email {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Optional: Style for checkboxes */
+  input[type="checkbox"] {
+    margin-right: 5px;
+  }
+  
+  /* Optional: Add some spacing to the form elements */
+  .form label,
+  .form input,
+  .form button {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  
+@media screen and (max-width: 810px){
+    
+    .form {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+    }
+    .email_add {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        align-content: center;
+        border: none;
+    }
+    
+    .email, .password {
+        width: 100%;
+        border: 1px solid #5E5763;
+
+        margin-bottom: 10px;
+    }
+    .or {
+        width: 100%;
+    }
+    .or::before {
+        content: '';
+        padding: 0;
+        margin: 0;
+    }
+    .or::after {
+        content: '';
+        padding: 0;
+        margin: 0;
+    }
 }
 
 /*categories
@@ -328,7 +468,7 @@ a:visited
     margin-bottom: 0.7rem;
 }
 */
-.card{
+/* .card{
     display: flex;
     background-color: #fff;
 }
@@ -421,4 +561,4 @@ a:visited
     width: 80%;
     display: flex;
     justify-content: space-around;
-}
+} */

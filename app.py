@@ -60,6 +60,11 @@ def login():
 def register():
     url = CREATE_USER_URL
     if request.method == "POST":
+        url = GET_USERS
+        payload = {}
+        headers = {}
+        response = requests.request("GET", url, headers=headers, data=payload)
+        users = response.json()
         user_details = request.form
         first_name = user_details["first-name"]
         last_name = user_details["last-name"]
@@ -78,6 +83,10 @@ def register():
             "email": email,
             "tags": tags_to_str,
         }
+        for user in users:
+            if user["email"] == email:
+                flash("Your email Id already exists", "danger")
+                return redirect(url_for("login"))
         payload = json.dumps(params)
         headers = {"Content-Type": "text/plain"}
         response = requests.request("POST", url, headers=headers, data=payload)
@@ -107,23 +116,44 @@ def index():
     # query = f"select * from VP_Products where Availability='Yes'"
     if request.method == "POST":
         form_details = request.form
-        try:
-            tag_name = form_details["cat"]
-        except:
-            tag_name = "0"
-        if tag_name != "0":
-            user_email = session["email"]
-            fetch_google_data(tag_name, user_email)
-            flash("The relevant tag information has been stored to our database")
-            user_email = session["email"]
-            sender = SENDER_MAIL
-            try:
-                send_mail(sender, "Test Mail", [user_email])
-                flash(f"Email sent successfully! to {user_email}")
-            except Exception as e:
-                flash("Error sending email: {response.status_code} - {response.text}")
-                print(e)
-            return redirect(url_for("index"))
+        event_name = form_details["Event Name"]
+        event_date = form_details["Event Date"]
+        creator = form_details["Created By"]
+        tags = form_details.getlist("tags")
+        link = form_details["Link"]
+        event_desc = form_details["Event Description"]
+
+        event_data = {
+            "Event Name": event_name,
+            "Event Date": event_date,
+            "Created By": creator,
+            "Tags": tags,
+            "Link": link,
+            "Event Description": event_desc
+        }
+
+        # Convert the dictionary to JSON
+        json_data = json.dumps(event_data, indent=2)
+        print(json_data)
+        flash("The data has been submitted successfully!")
+        return redirect(url_for("index"))
+        # try:
+        #     tag_name = form_details["cat"]
+        # except:
+        #     tag_name = "0"
+        # if tag_name != "0":
+        #     user_email = session["email"]
+        #     fetch_google_data(tag_name, user_email)
+        #     flash("The relevant tag information has been stored to our database")
+        #     user_email = session["email"]
+        #     sender = SENDER_MAIL
+        #     try:
+        #         send_mail(sender, "Test Mail", [user_email])
+        #         flash(f"Email sent successfully! to {user_email}")
+        #     except Exception as e:
+        #         flash("Error sending email: {response.status_code} - {response.text}")
+        #         print(e)
+        #     return redirect(url_for("index"))
 
     return render_template("index.html", taglist=TAGS)
 
