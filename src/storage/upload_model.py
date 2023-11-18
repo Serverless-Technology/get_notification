@@ -21,8 +21,9 @@ def save_response(response: dict):
     pass
 
 
-def upload_event(storage, src_path, dst_path, max_attempts):
+def upload_event(storage, src_path, dst_path, max_attempts=3):
     is_uploaded = False
+    print(f"Uploading event : {src_path} to {dst_path}")
 
     for i in range(max_attempts):
         try:

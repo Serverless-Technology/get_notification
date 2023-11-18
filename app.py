@@ -17,6 +17,7 @@ from flask_sse import sse
 from flask import Flask, session
 from src.google_events.data_fetch import fetch_google_data
 from src.notifications.notify_user import send_mail
+from src.utils import upload_to_bucket
 
 SENDER_MAIL = os.environ.get("SENDER_MAIL")
 
@@ -133,8 +134,10 @@ def index():
         }
 
         # Convert the dictionary to JSON
-        json_data = json.dumps(event_data, indent=2)
-        print(json_data)
+        # json_data = json.dumps(event_data, indent=2)
+        print(event_data)
+        upload_to_bucket(event_data)
+        # print(json_data)
         flash("The data has been submitted successfully!")
         return redirect(url_for("index"))
         # try:
