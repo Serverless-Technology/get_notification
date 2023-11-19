@@ -49,6 +49,7 @@ class AmazonWebStorage(Storage):
         else:
             try:
                 print("\n Trying to upload file... \n ")
+                print(f"Printing key: {s3_dst_path}")
                 self.client.upload_file(src_path, self.bucket.name, s3_dst_path)
             except ClientError as e:
                 print(f"Upload failed: src :{src_path}, dst:{dst_path}")

@@ -114,7 +114,14 @@ input {
     position: relative;
 }
 
-
+.tag {
+    border: 1px solid whitesmoke;
+    padding: 0 5px;
+    border-radius: 10px;
+    display: block-inline;
+    margin-bottom: 10px;
+    position: relative;
+}
 
 
 .btn {

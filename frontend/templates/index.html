@@ -23,20 +23,39 @@
   </nav>
 </header>
 <div class="cont">
-  <h2>Choose the tag and click on submit to get notified about the releavant information</h2>
+  <h2>Upload the latest information to notify the subscribed users</h2>
 </div>
   <div class="form">
-    <form action="" method="post">
-        <select class = "search-box" id="cat" name="cat" onchange="displaySelectedValue()">
-            <option disabled selected value="0">Select Tag</option>
-            <option value = "0">All</option>
-            {% for j in taglist %}
-              <OPTION value={{j}}>{{j}}</OPTION>
-            {% endfor %}
-          </select>
-        <button id="search-btn">Submit
-        </button>
-    </form>
+    <form action="" class="form active" method="post">
+      <h2>Fill in the details</h2>
+      <label for="Event Name">Event Name</label>
+      <div class="email_add" onclick="activeInput(this)">
+        <input type="text" name="Event Name" class="email" id="EventName" placeholder="">
+      </div>
+      <label for="Event Date">Event Date</label>
+      <div class="email_add" onclick="activeInput(this)">
+        <input type="date" name="Event Date" class="email" id="EventDate">
+      </div>
+      <label for="Created By">Created By</label>
+      <div class="email_add" onclick="activeInput(this)">
+        <input type="text" name="Created By" class="email" id="CreatedBy" placeholder="">
+      </div>
+      <label for="Tags">Tags</label>
+      <div class="email_add" >
+          {% for j in taglist %}
+              <input type="checkbox" id="{{ j }}" name="tags" value="{{ j }}">
+              <label for="{{ j }}">{{ j }}</label><br>
+          {% endfor %}
+      </div>
+      <label for="Link">Link</label>
+      <div class="email_add" onclick="activeInput(this)" >
+        <input type="text" name="Link" class="email" id="Link" placeholder="">
+      </div>
+      <label for="Event Description">Event Description</label>
+      <div class="email_add" onclick="activeInput(this)">
+        <input type="text" name="Event Description" class="email" id=EventDescription" placeholder="">
+      </div>
+      <button class="btn btn-login">Submit</button></a>
   </div>  
 
     {% with messages = get_flashed_messages() %}
